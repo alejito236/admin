@@ -11,6 +11,14 @@ Route::resource('/mision', 'misionController');
 
 Route::resource('/politica', 'politica');
 
+Route::resource('/valores', 'valores');
+
+Route::resource('/plan', 'plan');
+
+Route::resource('/organigrama', 'organigrama');
+
+Route::resource('/unidades', 'unidades');
+
 
 
 

@@ -268,19 +268,19 @@
               </li>
               <li class="nav-item">
               <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Valores corporativos</button></a>
+              <a href="{{route('valores.index')}}"><button type="button" class="btn btn-secondary">Valores corporativos</button></a>
               </li>
               <li class="nav-item">
               <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Plan estrategico vigente</button></a>
+              <a href="{{route('plan.index')}}"><button type="button" class="btn btn-secondary">Plan estrategico vigente</button></a>
               </li>
               <li class="nav-item">
               <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Organigrama</button></a>
+              <a href="{{route('organigrama.index')}}"><button type="button" class="btn btn-secondary">Organigrama</button></a>
               </li>
               <li class="nav-item">
               <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Unidades estrategicas de negocio</button></a>
+              <a href="{{route('unidades.index')}}"><button type="button" class="btn btn-secondary">Unidades estrategicas de negocio</button></a>
               </li>
             </ul>
           </li>
@@ -296,7 +296,7 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-               SIG
+               Talento humano
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
