@@ -254,7 +254,108 @@
   </div>
   <!-- Content Wrapper. Contains page content -->
 
-  <div class="content-wrapper">
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">
+                                @guest
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
+                                @else
+                                {{ Auth::user()->name }}
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                           document.getElementById('logout-form').submit();">
+                                    Cerrar Sesión
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                    style="display: none;">
+                                    @csrf
+                                </form>
+
+                                @endguest
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Menu -->
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                            data-accordion="false">
+
+                            <li class="nav-item">
+                                <a href="/" class="{{ Request::path() === '/' ? 'nav-link active' : 'nav-link' }}">
+                                    <i class="nav-icon fas fa-home"></i>
+                                    <p>Inicio</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{url('ejemplo')}}"
+                                    class="{{ Request::path() === 'ejemplo' ? 'nav-link active' : 'nav-link' }}">
+                                    <i class="nav-icon fas fa-users"></i>
+                                    <p>
+                                        Usuarios
+                                        <?php use App\User; $users_count = User::all()->count(); ?>
+                                        <span class="right badge badge-danger">{{ $users_count ?? '0' }}</span>
+                                    </p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon far fa-sticky-note"></i>
+                                    <p>Notas<i class="fas fa-angle-left right"></i></p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="notas/todas"
+                                            class="{{ Request::path() === 'notas/todas' ? 'nav-link active' : 'nav-link' }}">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Todas</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="notas/favoritas"
+                                            class="{{ Request::path() === 'notas/favoritas' ? 'nav-link active' : 'nav-link' }}">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Favoritas</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="notas/archivadas"
+                                            class="{{ Request::path() === 'notas/archivadas' ? 'nav-link active' : 'nav-link' }}">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Archivadas</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+
+                        </ul>
+                    </nav>
+                    
+                    <!-- /.sidebar-menu -->
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <div class="content-header">
+
+                </div>
+                <!-- /.content-header -->
+
+                <!-- Main content -->
+                <section class="content">
+                <div class="content-wrapper float-rigth">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">

@@ -194,10 +194,11 @@
                                     <p>Inicio</p>
                                 </a>
                             </li>
+                            
 
                             <li class="nav-item">
-                                <a href="{{url('ejemplo')}}"
-                                    class="{{ Request::path() === 'ejemplo' ? 'nav-link active' : 'nav-link' }}">
+                                <a href="{{route('usuarios.index')}}"
+                                    class="{{ Request::path() === 'index' ? 'nav-link active' : 'nav-link' }}">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>
                                         Usuarios
@@ -236,9 +237,98 @@
                                     </li>
                                 </ul>
                             </li>
+                  
+            </ul>
+          </li>
+        </ul>
+      </nav> 
+
+
+
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview ">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Plan estrategico
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Mision/Vision</button></a>
+              </li>
+              <li class="nav-item">
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('politica.index')}}"><button type="button" class="btn btn-secondary">Politica de calidad</button></a>
+              </li>
+              <li class="nav-item">
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Valores corporativos</button></a>
+              </li>
+              <li class="nav-item">
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Plan estrategico vigente</button></a>
+              </li>
+              <li class="nav-item">
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Organigrama</button></a>
+              </li>
+              <li class="nav-item">
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Unidades estrategicas de negocio</button></a>
+              </li>
+            </ul>
+          </li>
 
                         </ul>
                     </nav>
+                    
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview ">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+               SIG
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Mision/Vision</button></a>
+              </li>
+              <li class="nav-item">
+                <a href="google.com" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Politica de calidad</p>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a href="google.com" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Valores Corporativos</p>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a href="google.com" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Plan Estrategico Vigente</p>
+                </a>
+              </li> 
+            </ul>
+          </li>
+
+                        </ul>
+                    </nav>
+
                     <!-- /.sidebar-menu -->
                 </div>
                 <!-- /.sidebar -->
