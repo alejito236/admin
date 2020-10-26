@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-<h2>listo estuvo aquí <a href="usuarios/create"><button type="button" class="btn btn-success float-right">Agregar usuario</button></a></h2>
+<h2>Lista de usuarios<a href="usuarios/create"><button type="button" class="btn btn-success float-right">Agregar usuario</button></a></h2>
 <h6>
 @if($search)
 <div class="alert alert-primary" role="alert">
