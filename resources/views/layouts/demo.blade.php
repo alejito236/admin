@@ -208,36 +208,7 @@
                                 </a>
                             </li>
 
-                            <li class="nav-item has-treeview">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon far fa-sticky-note"></i>
-                                    <p>Notas<i class="fas fa-angle-left right"></i></p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="notas/todas"
-                                            class="{{ Request::path() === 'notas/todas' ? 'nav-link active' : 'nav-link' }}">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Todas</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="notas/favoritas"
-                                            class="{{ Request::path() === 'notas/favoritas' ? 'nav-link active' : 'nav-link' }}">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Favoritas</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="notas/archivadas"
-                                            class="{{ Request::path() === 'notas/archivadas' ? 'nav-link active' : 'nav-link' }}">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>Archivadas</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                  
+                           
             </ul>
           </li>
         </ul>
@@ -303,29 +274,30 @@
             <ul class="nav nav-treeview">
             <li class="nav-item">
               <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Mision/Vision</button></a>
+              <a href="{{route('capacitaciones.index')}}"><button type="button" class="btn btn-secondary">Capacitaciones</button></a>
               </li>
               <li class="nav-item">
-                <a href="google.com" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Politica de calidad</p>
-                </a>
-              </li> 
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('cumple.index')}}"><button type="button" class="btn btn-secondary">Cronograma de cumpleaños</button></a>
+              </li>
               <li class="nav-item">
-                <a href="google.com" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Valores Corporativos</p>
-                </a>
-              </li> 
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('directorio.index')}}"><button type="button" class="btn btn-secondary">Directorio</button></a>
+              </li>
               <li class="nav-item">
-                <a href="google.com" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Plan Estrategico Vigente</p>
-                </a>
-              </li> 
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('biografias.index')}}"><button type="button" class="btn btn-secondary">Biografias</button></a>
+              </li>
+              <li class="nav-item">
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('infografias.index')}}"><button type="button" class="btn btn-secondary">Infografias</button></a>
+              </li>
+              <li class="nav-item">
+              <i class="far fa-circle nav-icon"></i>
+              <a href="{{route('copasst.index')}}"><button type="button" class="btn btn-secondary">COPASST</button></a>
+              </li>
             </ul>
           </li>
-
                         </ul>
                     </nav>
 

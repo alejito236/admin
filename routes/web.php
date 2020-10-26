@@ -19,6 +19,18 @@ Route::resource('/organigrama', 'organigrama');
 
 Route::resource('/unidades', 'unidades');
 
+Route::resource('/capacitaciones', 'capacitaciones');
+
+Route::resource('/cumple', 'cumple');
+
+Route::resource('/directorio', 'directorio');
+
+Route::resource('/biografias', 'biografias');
+
+Route::resource('/infografias', 'infografias');
+
+Route::resource('/copasst', 'copasst');
+
 
 
 
