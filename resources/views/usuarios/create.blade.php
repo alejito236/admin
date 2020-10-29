@@ -1,7 +1,7 @@
 @extends('layouts.demo')
 
 @section('content')
-<div class="container">
+<div class="container"  style="color:black">
     <div class='row'>
         <div class='col-sm-4'>
 <form action='/usuarios' method ='POST'>
@@ -24,6 +24,7 @@
 </form>
         </div>
     </div>
+</div>
 </div>
 
 

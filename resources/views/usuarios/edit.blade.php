@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container"  style="color:black">
     <div class='row'>
         <div class='col-sm-4'>
         <h3>Editar Usuario:{{$user->name}}</h3>
@@ -35,6 +35,7 @@
             </form>
         </div>
     </div>
+</div>
 </div>
 
 

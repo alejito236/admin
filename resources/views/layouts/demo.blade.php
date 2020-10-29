@@ -25,6 +25,25 @@
     <!-- Styles -->
     <link href="{{ asset('dist/css/adminlte.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        *{
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        }
+        .card{
+            
+            background-color: #113049;
+        }
+        .menus{
+            background-color: #113049;
+        }
+        .menus>a,.navbar-white{
+            background-color: #e6e7e7;
+        }
+        .nav-link.active {
+            background-color: #e6e7e7;
+        }
+    </style>
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -147,12 +166,12 @@
             <!-- /.navbar -->
 
             <!-- Main Sidebar Container -->
-            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <aside class="main-sidebar sidebar-dark-dark elevation-4 menus">
                 <!-- Brand Logo -->
                 <a href="{{ url('/') }}" class="brand-link">
-                    <img src="{{asset ('dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    <img src="{{asset ('dist/images/logo montichelo.png')}}" alt="AdminLTE Logo" class="brand-image "
                         style="opacity: .8">
-                    <span class="brand-text font-weight-light">System Team</span>
+                    <span class="brand-text font-weight-light">.</span>
                 </a>
 
                 <!-- Sidebar -->
@@ -199,7 +218,7 @@
                             <li class="nav-item">
                                 <a href="{{route('usuarios.index')}}"
                                     class="{{ Request::path() === 'index' ? 'nav-link active' : 'nav-link' }}">
-                                    <i class="nav-icon fas fa-users"></i>
+                                    <i class="nav-icon fas fa-user"></i>
                                     <p>
                                         Usuarios
                                         <?php use App\User; $users_count = User::all()->count(); ?>
@@ -222,7 +241,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview ">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fa fa-id-card"></i>
               <p>
                 Plan estrategico
                 <i class="right fas fa-angle-left"></i>
@@ -230,28 +249,27 @@
             </a>
             <ul class="nav nav-treeview">
             <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('mision.index')}}"><button type="button" class="btn btn-secondary">Mision/Vision</button></a>
+             
+              <a href="{{route('mision.index')}}"><button type="button" class="btn " style="margin-left:25px">Mision/Vision</button></a>
               </li>
               <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('politica.index')}}"><button type="button" class="btn btn-secondary">Politica de calidad</button></a>
+             
+              <a href="{{route('politica.index')}}"><button type="button" class="btn " style="margin-left:25px">Politica de calidad</button></a>
               </li>
               <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('valores.index')}}"><button type="button" class="btn btn-secondary">Valores corporativos</button></a>
+          
+              <a href="{{route('valores.index')}}"><button type="button" class="btn " style="margin-left:25px">Valores corporativos</button></a>
               </li>
               <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('plan.index')}}"><button type="button" class="btn btn-secondary">Plan estrategico vigente</button></a>
+           
+              <a href="{{route('plan.index')}}"><button type="button" class="btn " style="margin-left:25px">Plan estrategico vigente</button></a>
               </li>
               <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('organigrama.index')}}"><button type="button" class="btn btn-secondary">Organigrama</button></a>
+          
+              <a href="{{route('organigrama.index')}}"><button type="button" class="btn " style="margin-left:25px">Organigrama</button></a>
               </li>
               <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('unidades.index')}}"><button type="button" class="btn btn-secondary">Unidades estrategicas de negocio</button></a>
+              <a href="{{route('unidades.index')}}"><button type="button" class="btn " style="margin-left:25px">Unidades estrategicas de negocio</button></a>
               </li>
             </ul>
           </li>
@@ -265,7 +283,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview ">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fa fa-users"></i>
               <p>
                Talento humano
                 <i class="right fas fa-angle-left"></i>
@@ -273,28 +291,32 @@
             </a>
             <ul class="nav nav-treeview">
             <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('capacitaciones.index')}}"><button type="button" class="btn btn-secondary">Capacitaciones</button></a>
+              
+              <a href="{{route('novedades.index')}}"><button type="button" class="btn " style="margin-left:25px">Novedades</button></a>
+              </li>
+            <li class="nav-item">
+              
+              <a href="{{route('capacitaciones.index')}}"><button type="button"  class="btn " style="margin-left:25px">Capacitaciones</button></a>
               </li>
               <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('cumple.index')}}"><button type="button" class="btn btn-secondary">Cronograma de cumpleaños</button></a>
+              
+              <a href="{{route('cumple.index')}}"><button type="button" class="btn " style="margin-left:25px">Cronograma de cumpleaños</button></a>
               </li>
               <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('directorio.index')}}"><button type="button" class="btn btn-secondary">Directorio</button></a>
+              
+              <a href="{{route('directorio.index')}}"><button type="button" class="btn " style="margin-left:25px">Directorio</button></a>
               </li>
               <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('biografias.index')}}"><button type="button" class="btn btn-secondary">Biografias</button></a>
+              
+              <a href="{{route('biografias.index')}}"><button type="button" class="btn " style="margin-left:25px">Biografias</button></a>
               </li>
               <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('infografias.index')}}"><button type="button" class="btn btn-secondary">Infografias</button></a>
+              
+              <a href="{{route('infografias.index')}}"><button type="button" class="btn " style="margin-left:25px">Infografias</button></a>
               </li>
               <li class="nav-item">
-              <i class="far fa-circle nav-icon"></i>
-              <a href="{{route('copasst.index')}}"><button type="button" class="btn btn-secondary">COPASST</button></a>
+              
+              <a href="{{route('copasst.index')}}"><button type="button" class="btn " style="margin-left:25px">COPASST</button></a>
               </li>
             </ul>
           </li>
@@ -315,11 +337,19 @@
                 <!-- /.content-header -->
 
                 <!-- Main content -->
-                <section class="content">
+    
+                <section class="content" style="background-color:transparent;">
+                
                     @yield('content')
+   
                 </section>
+                <div class="row">
+
+  
+
                 <!-- /.content -->
             </div>
+            
             <!-- /.content-wrapper -->
             <footer class="main-footer">
                 <!-- NO QUITAR -->

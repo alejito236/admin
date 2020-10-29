@@ -32,5 +32,8 @@ Route::resource('/infografias', 'infografias');
 Route::resource('/copasst', 'copasst');
 
 
+Route::resource('/novedades', 'NovedadesController');
+
+
 
 

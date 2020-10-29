@@ -1,16 +1,22 @@
 @extends('layouts.demo')
 
 @section('content')
-<div class="container">
-<h2>Lista de usuarios<a href="usuarios/create"><button type="button" class="btn btn-success float-right">Agregar usuario</button></a></h2>
-<h6>
-@if($search)
-<div class="alert alert-primary" role="alert">
-  Los resultados de tu busqueda  '{{$search}}' son:
-</div>
-@endif
-</h6>
-<table class="table">
+
+<div class="titulos" style="  background-color: #113049;
+  padding: 1em; color:#fff; margin: 1em 1em 1em 0em; border-radius:5px;">
+
+        @if($search)
+        <div class="alert alert-primary" role="alert">
+            Los resultados de tu busqueda '{{$search}}' son:
+        </div>
+        @endif
+        <h1>lista de usuarios<a href="usuarios/create"><br><button type="button" class="btn btn-success btn-lg ">Agregar
+                    novedad</button></a></h1>
+
+
+    </div>
+
+<table class="table" style="color:black">
   <thead>
     <tr>
       <th scope="col">ID</th>
@@ -51,4 +57,6 @@
       </div>
     </div>
   </div>
+  </div>
+  
 @endsection
