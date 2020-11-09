@@ -19,8 +19,6 @@ Route::resource('/organigrama', 'organigrama');
 
 Route::resource('/unidades', 'unidades');
 
-Route::resource('/capacitaciones', 'capacitaciones');
-
 Route::resource('/cumple', 'cumple');
 
 Route::resource('/directorio', 'directorio');
@@ -33,6 +31,16 @@ Route::resource('/copasst', 'copasst');
 
 
 Route::resource('/novedades', 'NovedadesController');
+
+Route::resource('/capacitaciones', 'CapacitacionesController');
+
+Route::resource('/manuales', 'manuales');
+
+Route::resource('/procedimientos', 'procedimientos');
+
+Route::resource('/formatos', 'formatos');
+
+Route::resource('/registros', 'registros');
 
 
 

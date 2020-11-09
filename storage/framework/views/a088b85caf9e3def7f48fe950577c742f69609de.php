@@ -324,6 +324,42 @@
                         </ul>
                     </nav>
 
+                    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview ">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+               SIG
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+              
+              <a href="<?php echo e(route('manuales.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Manuales</button></a>
+              </li>
+            <li class="nav-item">
+              
+              <a href="<?php echo e(route('procedimientos.index')); ?>"><button type="button"  class="btn " style="margin-left:25px">Procedimientos</button></a>
+              </li>
+              <li class="nav-item">
+              
+              <a href="<?php echo e(route('formatos.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Formatos</button></a>
+              </li>
+              <li class="nav-item">
+              
+              <a href="<?php echo e(route('registros.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Registros</button></a>
+              </li>
+             
+            </ul>
+          </li>
+                        </ul>
+                    </nav>
+
+
                     <!-- /.sidebar-menu -->
                 </div>
                 <!-- /.sidebar -->
