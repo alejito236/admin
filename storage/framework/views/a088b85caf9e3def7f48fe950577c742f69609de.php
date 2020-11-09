@@ -216,17 +216,7 @@
                             </li>
                             
 
-                            <li class="nav-item">
-                                <a href="<?php echo e(route('usuarios.index')); ?>"
-                                    class="<?php echo e(Request::path() === 'index' ? 'nav-link active' : 'nav-link'); ?>">
-                                    <i class="nav-icon fas fa-user"></i>
-                                    <p>
-                                        Usuarios
-                                        <?php use App\User; $users_count = User::all()->count(); ?>
-                                        <span class="right badge badge-danger"><?php echo e($users_count ?? '0'); ?></span>
-                                    </p>
-                                </a>
-                            </li>
+                           
 
                            
             </ul>
@@ -304,8 +294,17 @@
               <a href="<?php echo e(route('cumple.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Cronograma de cumpleaños</button></a>
               </li>
               <li class="nav-item">
+              <li class="nav-item">
+                                <a href="<?php echo e(route('usuarios.index')); ?>" style="margin-left:25px" 
+                                    class="<?php echo e(Request::path() === 'index' ? 'nav-link active' : 'nav-link'); ?>">
+                                    <p>
+                                        Directorio
+                                        <?php use App\User; $users_count = User::all()->count(); ?>
+                                        <span class="right badge badge-danger"><?php echo e($users_count ?? '0'); ?></span>
+                                    </p>
+                                </a>
+                            </li>
               
-              <a href="<?php echo e(route('directorio.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Directorio</button></a>
               </li>
               <li class="nav-item">
               

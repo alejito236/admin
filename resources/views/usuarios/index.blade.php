@@ -11,7 +11,7 @@
         </div>
         @endif
         <h1>lista de usuarios<a href="usuarios/create"><br><button type="button" class="btn btn-success btn-lg ">Agregar
-                    novedad</button></a></h1>
+                    usuarios</button></a></h1>
 
 
     </div>
