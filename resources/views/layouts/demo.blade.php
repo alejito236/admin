@@ -215,17 +215,7 @@
                             </li>
                             
 
-                            <li class="nav-item">
-                                <a href="{{route('usuarios.index')}}"
-                                    class="{{ Request::path() === 'index' ? 'nav-link active' : 'nav-link' }}">
-                                    <i class="nav-icon fas fa-user"></i>
-                                    <p>
-                                        Usuarios
-                                        <?php use App\User; $users_count = User::all()->count(); ?>
-                                        <span class="right badge badge-danger">{{ $users_count ?? '0' }}</span>
-                                    </p>
-                                </a>
-                            </li>
+                           
 
                            
             </ul>
@@ -303,8 +293,17 @@
               <a href="{{route('cumple.index')}}"><button type="button" class="btn " style="margin-left:25px">Cronograma de cumpleaños</button></a>
               </li>
               <li class="nav-item">
+              <li class="nav-item">
+                                <a href="{{route('usuarios.index')}}" style="margin-left:25px" 
+                                    class="{{ Request::path() === 'index' ? 'nav-link active' : 'nav-link' }}">
+                                    <p>
+                                        Directorio
+                                        <?php use App\User; $users_count = User::all()->count(); ?>
+                                        <span class="right badge badge-danger">{{ $users_count ?? '0' }}</span>
+                                    </p>
+                                </a>
+                            </li>
               
-              <a href="{{route('directorio.index')}}"><button type="button" class="btn " style="margin-left:25px">Directorio</button></a>
               </li>
               <li class="nav-item">
               

@@ -11,7 +11,11 @@
         </div>
         @endif
         <h1>lista de usuarios<a href="usuarios/create"><br><button type="button" class="btn btn-success btn-lg ">Agregar
+<<<<<<< HEAD
                     Usuario</button></a></h1>
+=======
+                    usuarios</button></a></h1>
+>>>>>>> 61bf9607d51a74b38a8e182edb253bc013c73a6e
 
 
     </div>
