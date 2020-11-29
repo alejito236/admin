@@ -1,5 +1,3 @@
-extends('layouts.demo')
-
 @extends('layouts.demo')
 
 @section('content')
@@ -9,17 +7,12 @@ extends('layouts.demo')
               <div class="card-body">
                 <h5 class="card-title">Manuales</h5>
 
-                <p class="card-text">
-               
-               
-
-                
-              </div>
-            </div>
-
+           
               </div>
             </div><!-- /.card -->
           </div>
+          </div>
+          
           <!-- /.col-md-6 -->
           
           <!-- /.col-md-6 -->

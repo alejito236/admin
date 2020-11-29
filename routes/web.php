@@ -7,6 +7,8 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::resource('/usuarios', 'UserController');
 
+route::get('/usuario/listarPdf', 'UserController@listarPdf')->name('nombres_pdf');
+
 Route::resource('/mision', 'misionController');
 
 Route::resource('/politica', 'politica');
@@ -29,12 +31,14 @@ Route::resource('/infografias', 'infografias');
 
 Route::resource('/copasst', 'copasst');
 
+Route::resource('/Manualesoriginal', 'Manuales');
 
 Route::resource('/novedades', 'NovedadesController');
 
 Route::resource('/capacitaciones', 'CapacitacionesController');
 
-Route::resource('/manuales', 'manuales');
+Route::resource('/pqrs', 'PqrsController');
+
 
 Route::resource('/procedimientos', 'procedimientos');
 
@@ -43,5 +47,5 @@ Route::resource('/formatos', 'formatos');
 Route::resource('/registros', 'registros');
 
 
-
+route::name('imprimir')->get('\imprimir-pdf', 'PDFController@imprimir');
 

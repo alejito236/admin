@@ -29,8 +29,34 @@
                     <input type="email" class="form-control" name="email" value='<?php echo e($user->email); ?>' placeholder="Escribe tu correo">
                 </div>
 
+                
+  <body>
+  <div class="container" >
+<div class="modal fade" tabindex="-1" id="modal1">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+      Usuarios
+      <button class="close" data-dismiss="modal">&times;</button>
+       </div>
+       <div class="modal-body">
+       ¿Estas seguro de actualizar el usuario?
+       </div>
+       <div class= "modal-footer">
+       <button type=submit class="btn btn-primary">Aceptar</button>
+       <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <button type="submit" class="btn btn-primary">Actualizar</button>
+       
+</body>
+
+
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Actualizar</button>
                 <button type="reset" class="btn btn-danger">Cancelar</button>
             </form>
         </div>

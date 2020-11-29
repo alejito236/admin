@@ -47,11 +47,11 @@ public function store(Request $request)
     $capacitacion-> cuerpo_capacitacion= request('cuerpo_capacitacion');
     $capacitacion-> tipo_capacitacion= request('tipo_capacitacion');
     $capacitacion-> fecha_capacitacion= request('fecha_capacitacion');
-
-
-
+ 
 
     $capacitacion->save();
+
+    session()->flash('exito', 'Su capacitacion se creo con exito');
 
     return redirect('/capacitaciones');
 }
@@ -95,6 +95,8 @@ public function update(CapacitacionFormRequest $request, $id)
 
     $capacitacion->update();
 
+    session()->flash('exito', 'Su capacitacion fue actualizada');
+    
     return redirect('/capacitaciones');
 }
 
@@ -108,6 +110,8 @@ public function destroy($id)
 {
     $capacitacion= Capacitaciones::findOrFail($id);
     $capacitacion-> delete();
+
+    session()->flash('exito', 'Su capacitacion fue eliminada');
     return redirect('/capacitaciones');
 }
 }

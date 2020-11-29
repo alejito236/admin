@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 
 
+
 class UserController extends Controller
 {
     /**
@@ -31,6 +32,19 @@ class UserController extends Controller
         //return view('usuarios.index',['users'=>$users]);
 
     }
+    public function listarPdf(){
+
+        $usuario = User::join('id', 'name', 'email')
+              ->select('id', 'name', 'email')
+              ->orderBy('name', 'desc')->get();  
+
+        $cont=User::count();
+
+        $pdf = \PDF::loadView('pdf.nombrespdf',['usaurio'=>$usuario,'cont'=>$cont]);
+        return $pdf->download('articulos.pdf');
+    
+    }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -53,6 +67,8 @@ class UserController extends Controller
         $usuario-> password= request('password');
 
         $usuario->save();
+        session()->flash('exito', 'El usuario se creo con exito');
+
 
         return redirect('/usuarios');
 
@@ -95,6 +111,9 @@ class UserController extends Controller
 
         $usuario->update();
 
+        session()->flash('exito', 'El usuario se actualizo con exito');
+
+
         return redirect('/usuarios');
     }
 
@@ -108,7 +127,11 @@ class UserController extends Controller
     {
         $usuario= User::findOrFail($id);
         $usuario-> delete();
+        session()->flash('exito', 'El usuario se elimino con exito');
+
+        
+
         return redirect('/usuarios');
     }
-    
+   
 }

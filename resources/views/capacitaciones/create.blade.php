@@ -20,9 +20,33 @@
                     <input type="date" class="form-control" name="fecha_capacitacion">
                 </div>
                
+                </body>
+  <div class="container" >
+<div class="modal fade" tabindex="-1" id="modal1">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+     Capacitaciones
+      <button class="close" data-dismiss="modal">&times;</button>
+       </div>
+       <div class="modal-body">
+       ¿Estas seguro de crear la capacitacion?
+       </div>
+       <div class= "modal-footer">
+       <button type=submit class="btn btn-primary">Aceptar</button>
+       <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+       
+</body>
 
 
-                <button type="submit" class="btn btn-primary">Registrar</button>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Registrar</button>
                 <button type="reset" class="btn btn-danger">Cancelar</button>
             </form>
         </div>

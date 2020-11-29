@@ -1,16 +1,31 @@
 @extends('layouts.demo')
 
 @section('content')
-<div >
+
 
     <div class="titulos" style="  background-color: #113049;
   padding: 1em; color:#fff; margin: 1em 1em 1em 0em; border-radius:5px;">
+
+
 
         @if($search)
         <div class="alert alert-primary" role="alert">
             Los resultados de tu busqueda '{{$search}}' son:
         </div>
         @endif
+
+        @if($flash = Session::get('exito') )
+ 
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Genial!</strong> {{ $flash  }}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div >
+
+@endif
+    
         <h1>Capacitaciones<a href="capacitaciones/create"><br><button type="button" class="btn btn-success btn-lg ">Agregar
                     capacitacion</button></a></h1>
 
@@ -46,9 +61,37 @@
                     <form action="{{route('capacitaciones.destroy',$capacitacion->id)}}" class="justify-content-end" method=POST>
                         @csrf
                         @method('DELETE')
+                        
+ <body>
+  <div class="container" >
+    <div class="modal fade" tabindex="-1" id="modal1">
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header">
+          <p class="text-dark">Capacitaciones</p>
+             <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+            <div class="modal-body">
+            <p class="text-dark">¿Seguro que quieres borrar la capacitacion?</p>
+            </div>
+               <div class= "modal-footer">
+                <button type=submit class="btn btn-primary">Aceptar</button>
+                <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+               </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+       
+</body>
+
+
+             
                         <a href="{{route('capacitaciones.edit',$capacitacion->id)}}"><button type="button"
                                 class="btn btn-primary">Actualizar</button></a>
-                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal1">Eliminar</button>
+         
 
                     </form>
                 </div>

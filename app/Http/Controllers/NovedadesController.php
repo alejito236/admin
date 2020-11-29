@@ -62,6 +62,7 @@ class NovedadesController extends Controller
         
 
         $novedad->save();
+        session()->flash('exito', 'Su novedad se creo con exito');
 
         return redirect('/novedades');
 
@@ -106,6 +107,7 @@ class NovedadesController extends Controller
         
 
         $novedad->update();
+        session()->flash('exito', 'Su novedad se actualizo con exito');
 
         return redirect('/novedades');
     }
@@ -120,6 +122,7 @@ class NovedadesController extends Controller
     {
         $novedad= Novedades::findOrFail($id);
         $novedad-> delete();
+        session()->flash('exito', 'Su novedad elimino con exito');
         return redirect('/novedades');
     }
 }

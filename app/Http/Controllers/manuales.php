@@ -4,16 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class manuales extends Controller
+class Manuales extends Controller
 {
     
     public function index()
         {
-           
-            return view('manuales.index');
+            //return view('mision.index');
+            return view('Manualesoriginal.index');
             
         }
     
     
 }
-

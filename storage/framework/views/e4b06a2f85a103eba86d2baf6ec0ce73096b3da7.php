@@ -18,8 +18,33 @@
     <label for="password">Password</label>
     <input type="password" class="form-control" name="password">
   </div>
+
+  </body>
+  <div class="container" >
+<div class="modal fade" tabindex="-1" id="modal1">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+      Usuarios
+      <button class="close" data-dismiss="modal">&times;</button>
+       </div>
+       <div class="modal-body">
+       ¿Estas seguro de crear el usuario?
+       </div>
+       <div class= "modal-footer">
+       <button type=submit class="btn btn-primary">Aceptar</button>
+       <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+       
+</body>
+
  
-  <button type="submit" class="btn btn-primary">Registrar</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Registrar</button>
   <button type="reset" class="btn btn-danger">Cancelar</button>
 </form>
         </div>
@@ -29,5 +54,7 @@
 
 
 <?php $__env->stopSection(); ?>
+
+
 
 <?php echo $__env->make('layouts.demo', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\admin\resources\views/usuarios/create.blade.php ENDPATH**/ ?>

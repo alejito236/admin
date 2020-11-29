@@ -14,6 +14,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="dist/js/adminlte.js"></script>
+    
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
@@ -25,6 +26,7 @@
     <!-- Styles -->
     <link href="{{ asset('dist/css/adminlte.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
     <style>
         *{
             font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -48,6 +50,7 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div id="app">
+        
         <div class="wrapper">
 
             <!-- Navbar -->
@@ -337,7 +340,7 @@
             <ul class="nav nav-treeview">
             <li class="nav-item">
               
-              <a href="{{route('manuales.index')}}"><button type="button" class="btn " style="margin-left:25px">Manuales</button></a>
+              <a href="{{route('Manualesoriginal.index')}}"><button type="button" class="btn " style="margin-left:25px">Manuales</button></a>
               </li>
             <li class="nav-item">
               
@@ -350,6 +353,29 @@
               <li class="nav-item">
               
               <a href="{{route('registros.index')}}"><button type="button" class="btn " style="margin-left:25px">Registros</button></a>
+              </li>
+             
+            </ul>
+          </li>
+                        </ul>
+                    </nav>
+                    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview ">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+              Buzon de sugerncias
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+          
+              <li class="nav-item">
+              
+              <a href="{{route('pqrs.index')}}"><button type="button" class="btn " style="margin-left:25px">PQRS</button></a>
               </li>
              
             </ul>
@@ -403,5 +429,7 @@
     </div>
     
 </body>
+
+
 
 </html>
