@@ -30,7 +30,7 @@
         
    
         <h1>lista de usuarios<a href="usuarios/create"><br><button type="button" class="btn btn-success btn-lg ">Agregar
-                    usuarios</button></a></h1>
+                    Usuario</button></a></h1>
 
 
     </div>
