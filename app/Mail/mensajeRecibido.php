@@ -33,6 +33,6 @@ class mensajeRecibido extends Mailable
      */
     public function build()
     {
-        return $this->subject('esto es  una preuba')->view('emails.mensaje-recibir');
+        return $this->subject('Autenticación de PQRS')->view('emails.mensaje-recibir');
     }
 }

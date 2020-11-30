@@ -36,8 +36,17 @@
                     <input type="text" class="form-control" name="email_pqrs" placeholder="Correo">
                 </div>
                 <div class="form-group">
-                    <label for="tipoid_pqrs">Tipo de identificacion</label>
-                    <input type="text" class="form-control" name="tipoid_pqrs" placeholder="Tipo de documento">
+                
+                    <label for="tipoid_pqrs" >Tipo de identificacion</label>
+                    <select input type="text" class="form-control" name="tipoid_pqrs" placeholder="Tipo de documento">
+                     
+                     
+                              
+   <option value="1">C.C</option> 
+   <option value="2">Cedula de extranjeria</option> 
+   <option value="3">T.I</option>
+   
+</select>
                 </div>
                 <div class="form-group">
                     <label for="numeroid_pqrs">Numero de identificacion</label>
@@ -49,18 +58,21 @@
                 </div>
                 <div class="form-group">
                     <label for="tiposolicitud_pqrs">Tipo de solicitud</label>
-                    <input type="text" class="form-control" name="tiposolicitud_pqrs" placeholder="Select">
-                </div>
-                <div class="form-group">
-                    <label for="solicitud_pqrs">Solicitud</label>
-                    <input type="text" class="form-control" name="solicitud_pqrs" placeholder="Select">
-                </div>
-                <div class="form-group">
+                     <select input type="text" class="form-control" name="tiposolicitud_pqrs" placeholder="Select">
+                    <option value="1">Petición</option> 
+                    <option value="2">Queja</option> 
+                    <option value="3">Reclamo</option>
+                    <option value="4">Sugerencias</option> 
+                    </select> 
 
-                
-                    <label for="contenido_pqrs">Contenido</label>
-                    <input type="text" class="form-control" name="contenido_pqrs" placeholder="contenido">
-               
+                </div>
+                <div class="form-group">
+                    <label for="solicitud_pqrs">Titulo de solicitud</label>
+                    <input type="text" class="form-control" name="solicitud_pqrs" placeholder="Nombre de su pqrs">
+                </div>
+                <div class="form-group">
+                    <label for="contenido_pqrs">Contenido de solicitud</label>
+                    <textarea rows="14" type="text-area" name="contenido_pqrs" placeholder="Describa su problema" class="form-control"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="fecha_pqrs">Fecha</label>
@@ -78,7 +90,7 @@
       <button class="close" data-dismiss="modal">&times;</button>
        </div>
        <div class="modal-body">
-       ¿Estas seguro de envair su petición?
+       ¿Estas seguro de envair su PQRS?
        </div>
        <div class= "modal-footer">
        <button type=submit class="btn btn-primary">Aceptar</button>

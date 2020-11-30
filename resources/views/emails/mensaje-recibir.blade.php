@@ -6,9 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Informacion del correo</h2>
+    <h1>PQRS</h1>
 
-    <p>hola osgual este cooreo es para ti</p>
+    <h3>Diligencias de tu pqrs</h3>
+    
+    <h3>Los datos del colaborador son:</h3>
+
     <ul>
         <li>{{ $info->cuerpo_pqrs }}</li>
         <li>{{ $info->apellido_pqrs }}</li>

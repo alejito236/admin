@@ -65,7 +65,7 @@ public function store(Request $request)
 
     $pqrs->save();
 
-    session()->flash('exito', 'Su Sugerencia, Queja o Reclamo se envio con exito');
+    session()->flash('exito', 'Su PQRS se envio con exito');
 
     Mail::to('wilmarfer91@gmail.com') 
     ->send(new mensajeRecibido($pqrs));
