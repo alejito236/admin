@@ -49,3 +49,11 @@ Route::resource('/registros', 'registros');
 
 route::name('imprimir')->get('\imprimir-pdf', 'PDFController@imprimir');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

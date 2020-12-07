@@ -4,7 +4,7 @@
 <div class="container"  style="color:black">
     <div class='row'>
         <div class='col-sm-4'>
-<form action='/usuarios' method ='POST'>
+<form method="POST" action="<?php echo e(route('register')); ?>">
     <?php echo csrf_field(); ?>
   <div class="form-group">
     <label for="name">Nombre</label>
@@ -17,6 +17,11 @@
   <div class="form-group">
     <label for="password">Password</label>
     <input type="password" class="form-control" name="password">
+  </div>
+
+  <div class="form-group">
+    <label for="password"> confirm Password</label>
+    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
   </div>
 
   </body>
