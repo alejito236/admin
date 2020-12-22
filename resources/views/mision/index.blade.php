@@ -1,3 +1,4 @@
+
 @extends('layouts.demo')
 
 @section('content')
@@ -5,32 +6,21 @@
           <div class="col-lg-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">MISIÓN</h5>
+                <h5 class="card-title">Mision</h5>
+
+                
 
                 <p class="card-text">
-                Lxd411111111111111111111111111111111111111industry's standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.
+               
                
 
                 
               </div>
             </div>
 
-            <div class="card card-primary card-outline">
-              <div class="card-body">
-                <h5 class="card-title">VISIÓN</h5>
-
-                <p class="card-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-                
               </div>
             </div><!-- /.card -->
           </div>
-          </div>
-          
           <!-- /.col-md-6 -->
           
           <!-- /.col-md-6 -->

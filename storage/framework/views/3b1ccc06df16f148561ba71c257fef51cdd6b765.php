@@ -24,7 +24,7 @@
 <div >
 
 <?php endif; ?>
-        <h1>Novedades<a href="novedades/create"><br><button type="button" class="btn btn-success btn-lg ">Agregar
+        <h1>Novedades<a href="novedades/create"><br><button type="button" class="btn btn-success btn-sm  ">Agregar
                     novedad</button></a></h1>
 
 
@@ -32,8 +32,8 @@
 
     <div>
         <div class="col-sm-3 bg-light float-right">
-            <div class="card">
-                <div class="card-body">
+            <div class="card" style="background-color:transparent">
+                <div class="card-body" >
 
                     <p class="card-text"><iframe width="100%" height="315"
                             src="https://www.youtube.com/embed/UX9Cf36fSOU" frameborder="0"
@@ -48,14 +48,14 @@
 
 
     <?php $__currentLoopData = $novedades; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $novedad): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-    <div class="card w-75  " style="width: 18rem;">
+    <div class="card w-75  " style="background-color:transparent" style="width: 18rem;">
         <div class="row no-gutters justify-content-center">
             <div class="col-md-4">
                 <img src="/public/dist/images/<?php echo e($novedad->imagen_novedad); ?>" class="card-img " style="margin:10px"
                     alt="...">
             </div>
             <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body" style="color:black">
                     <h5 class="card-title"><?php echo e($novedad->cuerpo_novedad); ?></h5>
                     <p class="card-text"><?php echo e($novedad->tipo_novedad); ?></p>
                     <p class="card-text"><?php echo e($novedad->fecha_novedad); ?></p>
@@ -87,8 +87,8 @@
        
 </body>
                         <a href="<?php echo e(route('novedades.edit',$novedad->id)); ?>"><button type="button"
-                                class="btn btn-primary">Actualizar</button></a>
-                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal1">Eliminar</button>
+                        class="btn btn-primary btn-sm ">Actualizar</button></a>
+                         <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar</button>
                     </form>
                 </div>
             </div>

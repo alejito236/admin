@@ -23,7 +23,7 @@
         <li>{{ $info->solicitud_pqrs }}</li>
         <li>{{ $info->contenido_pqrs }}</li>
         <li>{{ $info->fecha_pqrs }}</li>
-        <li></li>
+       
     </ul>
 </body>
 </html>

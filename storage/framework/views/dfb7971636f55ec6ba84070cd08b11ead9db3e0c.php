@@ -29,7 +29,7 @@
    
         
    
-        <h1>lista de usuarios<a href="usuarios/create"><br><button type="button" class="btn btn-success btn-lg ">Agregar
+        <h1>lista de usuarios<a href="usuarios/create"><br><button type="button" class="btn btn-success btn-sm ">Agregar
                     Usuario</button></a></h1>
 
 
@@ -86,9 +86,9 @@
 
        
 </body>
-        <a href="<?php echo e(route('usuarios.show',$user->id)); ?>"><button type="button" class="btn btn-secondary">Ver</button></a>
-        <a href="<?php echo e(route('usuarios.edit',$user->id)); ?>"><button type="button" class="btn btn-primary">Actualizar</button></a>
-        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal1">Eliminar</button>
+        <a href="<?php echo e(route('usuarios.show',$user->id)); ?>"><button type="button" class="btn btn-secondary btn-sm ">Ver</button></a>
+        <a href="<?php echo e(route('usuarios.edit',$user->id)); ?>"><button type="button" class="btn btn-primary btn-sm ">Actualizar</button></a>
+        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar</button>
 
       </form>
       

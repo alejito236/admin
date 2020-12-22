@@ -4,7 +4,7 @@
 
 
     <div class="titulos" style="  background-color: #113049;
-  padding: 1em; color:#fff; margin: 1em 1em 1em 0em; border-radius:5px;">
+  padding: 1em; color:white; margin: 1em 1em 1em 0em; border-radius:5px;">
 
 
 
@@ -26,8 +26,8 @@
 
 @endif
     
-        <h1>Capacitaciones<a href="capacitaciones/create"><br><button type="button" class="btn btn-success btn-lg ">Agregar
-                    capacitacion</button></a></h1>
+        <h1>Capacitaciones<a href="capacitaciones/create"><br><button type="button" class="btn btn-success btn-sm ">Agregar capacitación
+                   </button></a></h1>
 
 
     </div>
@@ -49,16 +49,17 @@
 
 
     @foreach($capacitaciones as $capacitacion)
-    <div class="card w-75  " style="width: 18rem;">
+    <div class="card w-75"  style="background-color:transparent" style="width: 18rem; color:black">
         <div class="row no-gutters justify-content-center">
            
-            <div class="col-md-8">
-                <div class="card-body"style="margin-left:-165px">
+        
+            <div class="col-md-8" >
+                <div class="card-body" style="margin-left:-165px; color:black" >
                     <h5 class="card-title">{{$capacitacion->cuerpo_capacitacion}}</h5>
                     <p class="card-text">{{$capacitacion->tipo_capacitacion}}</p>
                     <p class="card-text">{{$capacitacion->fecha_capacitacion}}</p>
 
-                    <form action="{{route('capacitaciones.destroy',$capacitacion->id)}}" class="justify-content-end" method=POST>
+                    <form action="{{route('capacitaciones.destroy',$capacitacion->id)}}" class="justify-content-end"  method=POST>
                         @csrf
                         @method('DELETE')
                         
@@ -89,8 +90,8 @@
 
              
                         <a href="{{route('capacitaciones.edit',$capacitacion->id)}}"><button type="button"
-                                class="btn btn-primary">Actualizar</button></a>
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal1">Eliminar</button>
+                               class="btn btn-primary btn-sm "   >Actualizar</button></a>
+                                <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar</button>
          
 
                     </form>

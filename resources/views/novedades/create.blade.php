@@ -47,8 +47,8 @@
        
 </body>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Registrar</button>
-                <button type="reset" class="btn btn-danger">Cancelar</button>
+<button type="button" class="btn btn-primary btn-sm " data-toggle="modal" data-target="#modal1">Registrar</button>
+                <button type="reset" class="btn btn-danger btn-sm ">Cancelar</button>
    
             </form>
         </div>

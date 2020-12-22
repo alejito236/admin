@@ -206,24 +206,21 @@
                     </div>
 
                     <!-- Sidebar Menu -->
-                    <nav class="mt-2">
-                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                            data-accordion="false">
-
-                            <li class="nav-item">
-                                <a href="/" class="{{ Request::path() === '/' ? 'nav-link active' : 'nav-link' }}">
-                                    <i class="nav-icon fas fa-home"></i>
-                                    <p>Inicio</p>
-                                </a>
-                            </li>
-                            
+                  
 
                            
-
-                           
-            </ul>
-          </li>
-        </ul>
+                            <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview ">
+            <a href="{{route('inicio.index')}}" class="nav-link active">
+            <i class="nav-icon fa fa-home"></i>
+              <p>
+               inicio
+               
+              </p>
+            </a>
       </nav> 
 
 
@@ -295,6 +292,13 @@
               
               <a href="{{route('cumple.index')}}"><button type="button" class="btn " style="margin-left:25px">Cronograma de cumpleaños</button></a>
               </li>
+
+              </li>
+              <li class="nav-item">
+              
+              <a href="{{route('vacaciones.index')}}"><button type="button" class="btn " style="margin-left:25px">Solicitu de vacaciones</button></a>
+              </li>
+
               <li class="nav-item">
               <li class="nav-item">
                                 <a href="{{route('usuarios.index')}}" style="margin-left:25px" 
@@ -331,7 +335,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview ">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fa fa-users"></i>
+            <i class="nav-icon fa fa-book"></i>
               <p>
                SIG
                 <i class="right fas fa-angle-left"></i>
@@ -365,7 +369,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview ">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fa fa-users"></i>
+              <i class="nav-icon fa fa-bullhorn"></i>
               <p>
               Buzon de sugerncias
                 <i class="right fas fa-angle-left"></i>

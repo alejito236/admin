@@ -46,6 +46,10 @@ Route::resource('/formatos', 'formatos');
 
 Route::resource('/registros', 'registros');
 
+Route::resource('/inicio', 'inicioController');
+
+Route::resource('/vacaciones', 'VacacionesController');
+
 
 route::name('imprimir')->get('\imprimir-pdf', 'PDFController@imprimir');
 
