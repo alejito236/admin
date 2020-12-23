@@ -24,8 +24,11 @@
 <div >
 
 <?php endif; ?>
-        <h1>Novedades<a href="novedades/create"><br><button type="button" class="btn btn-success btn-sm  ">Agregar
-                    novedad</button></a></h1>
+        <h1>Novedades<a href="novedades/create"><br>
+        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('administrador')): ?>
+        <button type="button" class="btn btn-success btn-sm  ">Agregar
+                    novedad</button>
+                <?php endif; ?></a></h1>
 
 
     </div>
@@ -86,10 +89,16 @@
 
        
 </body>
-                        <a href="<?php echo e(route('novedades.edit',$novedad->id)); ?>"><button type="button"
+<?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('administrador')): ?>
+                        <a href="<?php echo e(route('novedades.edit',$novedad->id)); ?>">
+                            
+                        <button type="button"
                         class="btn btn-primary btn-sm ">Actualizar</button></a>
-                         <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar</button>
+                    
+                        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar </button>
+                    <?php endif; ?>
                     </form>
+
                 </div>
             </div>
         </div>

@@ -23,8 +23,11 @@
 <div >
 
 @endif
-        <h1>Novedades<a href="novedades/create"><br><button type="button" class="btn btn-success btn-sm  ">Agregar
-                    novedad</button></a></h1>
+        <h1>Novedades<a href="novedades/create"><br>
+        @can('administrador')
+        <button type="button" class="btn btn-success btn-sm  ">Agregar
+                    novedad</button>
+                @endcan</a></h1>
 
 
     </div>
@@ -85,10 +88,16 @@
 
        
 </body>
-                        <a href="{{route('novedades.edit',$novedad->id)}}"><button type="button"
+@can('administrador')
+                        <a href="{{route('novedades.edit',$novedad->id)}}">
+                            
+                        <button type="button"
                         class="btn btn-primary btn-sm ">Actualizar</button></a>
-                         <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar</button>
+                    
+                        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar </button>
+                    @endcan
                     </form>
+
                 </div>
             </div>
         </div>

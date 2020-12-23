@@ -28,8 +28,8 @@
    
         
    
-        <h1>lista de usuarios<a href="usuarios/create"><br><button type="button" class="btn btn-success btn-sm ">Agregar
-                    Usuario</button></a></h1>
+        <h1>lista de usuarios<a href="usuarios/create"><br>@can('administrador')<button type="button" class="btn btn-success btn-sm ">Agregar
+                    Usuario</button> @endcan</a></h1>
 
 
     </div>
@@ -86,9 +86,10 @@
        
 </body>
         <a href="{{route('usuarios.show',$user->id)}}"><button type="button" class="btn btn-secondary btn-sm ">Ver</button></a>
+        @can('administrador')
         <a href="{{route('usuarios.edit',$user->id)}}"><button type="button" class="btn btn-primary btn-sm ">Actualizar</button></a>
         <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar</button>
-
+@endcan
       </form>
       
       </td>
