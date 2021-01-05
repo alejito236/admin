@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html lang="en">
 	<head>
-		<title>Vamos que vamos</title>
+		<title>Login | Montechelo</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->	
@@ -32,7 +32,7 @@
 		
 		<div class="limiter">
 			<div class="container-login100" style="background-image: url('dist/images/fondo.jpg')">
-				<div class="wrap-login100 p-t-30 p-b-50">
+				<div class="wrap-login100 p-t-60 p-b-20">
 					<span class="login100-form-title p-b-41">
 					<img src="dist/images/logo montichelo.png"  class="rounded" style="background:rgba(250, 242, 242, 0.85);width:100%;padding:10px;">
 					</span>
