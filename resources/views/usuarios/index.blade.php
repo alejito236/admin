@@ -15,9 +15,8 @@
 
 @endif
 
-<div class="titulos" style="  background-color: #113049;
-  padding: 1em; color:#fff; margin: 1em 1em 1em 0em; border-radius:5px;">
-
+<div class="titulos" style="  background-color: #73b6c6;
+  padding: 1em; color:#fff; margin: 1em 1em 1em 0em; border-radius:5px; ">
         @if($search)
         <div class="alert alert-primary" role="alert">
             Los resultados de tu busqueda '{{$search}}' son:
@@ -28,7 +27,7 @@
    
         
    
-        <h1>lista de usuarios<a href="usuarios/create"><br>@can('administrador')<button type="button" class="btn btn-success btn-sm ">Agregar
+        <h1>lista de usuarios<a href="usuarios/create"><br>@can('administrador')<button type="button" class="btn btn-info btn-success btn-sm ">Agregar
                     Usuario</button> @endcan</a></h1>
 
 
@@ -85,7 +84,7 @@
 
        
 </body>
-        <a href="{{route('usuarios.show',$user->id)}}"><button type="button" class="btn btn-secondary btn-sm ">Ver</button></a>
+        <a href="{{route('usuarios.show',$user->id)}}" target="_blank"><button type="button" class="btn btn-secondary btn-sm ">Ver</button></a>
         @can('administrador')
         <a href="{{route('usuarios.edit',$user->id)}}"><button type="button" class="btn btn-primary btn-sm ">Actualizar</button></a>
         <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar</button>

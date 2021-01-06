@@ -3,7 +3,7 @@
 @section('content')
 <div >
 
-    <div class="titulos" style="  background-color: #113049;
+    <div class="titulos" style="  background-color: #73b6c6;
   padding: 1em; color:#fff; margin: 1em 1em 1em 0em; border-radius:5px;">
 
         @if($search)
@@ -20,18 +20,19 @@
 <span aria-hidden="true">&times;</span>
 </button>
 </div>
+
 <div >
 
 @endif
         <h1>Novedades<a href="novedades/create"><br>
         @can('administrador')
-        <button type="button" class="btn btn-success btn-sm  ">Agregar
+        <button type="button" class="btn btn-success btn-sm btn-info  " >Agregar
                     novedad</button>
                 @endcan</a></h1>
 
 
     </div>
-
+    </div>
     <div>
         <div class="col-sm-3 bg-light float-right">
             <div class="card" style="background-color:transparent">
@@ -58,7 +59,7 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body" style="color:black">
-                    <h5 class="card-title">{{$novedad->cuerpo_novedad}}</h5>
+                    <h1 class="card-title" style="color: #002537;"><strong>{{$novedad->cuerpo_novedad}}</strong></h1>
                     <p class="card-text">{{$novedad->tipo_novedad}}</p>
                     <p class="card-text">{{$novedad->fecha_novedad}}</p>
 
@@ -90,12 +91,17 @@
 </body>
 @can('administrador')
                         <a href="{{route('novedades.edit',$novedad->id)}}">
-                            
+                        <div class="float-right">
+                        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">
+                            Eliminar 
+                        </button>
                         <button type="button"
                         class="btn btn-primary btn-sm ">Actualizar</button></a>
                     
-                        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar </button>
-                    @endcan
+                        
+                    
+                        </div>
+                        @endcan
                     </form>
 
                 </div>

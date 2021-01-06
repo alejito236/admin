@@ -31,7 +31,7 @@
                                             <label for="cuerpo_pqrs">Nombres</label>
                                             <input type="text" class="form-control" name="cuerpo_pqrs" placeholder="Escribe tus nombres">
                                         </div>
-                                        <div class="col-md-3 offset-md-1" style="margin-left:100px">
+                                        <div class="col-md-3 offset-md-1" >
                                             <div class="form-group">
                                                 <label for="apellido_pqrs">Apellidos</label>
                                                 <input type="text" class="form-control" name="apellido_pqrs" placeholder="Escribe tus apellidos">
@@ -46,7 +46,7 @@
                                     </div>
                                     <div class="row align-items-center">
                                         <div class="form-group">
-                                            <label for="tipoid_pqrs">Tipo de identificacion</label>
+                                            <label for="tipoid_pqrs">Tipo de identificación</label>
                                             <select input type="text" class="form-control" name="tipoid_pqrs" placeholder="Tipo de documento">
                                                 <option value="1">C.C</option>
                                                 <option value="2">Cedula de extranjeria</option>
@@ -54,32 +54,31 @@
 
                                             </select>
                                         </div>
-                                        <div class="col-md-3 offset-md-1" style="margin-left:113px">
+                                        <div class="col-md-3 offset-md-1" >
                                             <div class="form-group">
-                                                <label for="numeroid_pqrs">Numero de identificacion</label>
+                                                <label for="numeroid_pqrs">Numero de identificación</label>
                                                 <input type="text" class="form-control" name="numeroid_pqrs" placeholder="Numero de documento">
                                             </div>
                                         </div>
                                         <div class="col-md-3 offset-md-1">
                                             <div class="form-group">
-                                                <label for="telefono_pqrs">Telefono</label>
+                                                <label for="telefono_pqrs">Teléfono</label>
                                                 <input type="text" class="form-control" name="telefono_pqrs" placeholder="Telefono">
                                             </div>
                                         </div>
 
                                     </div>
-                                    <div class="row align-items-end ">
+                                    <div class="row align-items-start">
                                         <div class="form-group">
                                             <label for="tiposolicitud_pqrs">Tipo de solicitud</label>
                                             <select input type="text" class="form-control" name="tiposolicitud_pqrs" placeholder="Select">
-                                                <option value="1">Petición</option>
+                                            <option value="1">Petición</option>
                                                 <option value="2">Queja</option>
                                                 <option value="3">Reclamo</option>
-                                                <option value="4">Sugerencias</option>
+                                                <option value="3">Sugerencias y/o otros</option>
                                             </select>
-
                                         </div>
-                                        <div class="col-md-3 offset-md-2" style="margin-left:170px">
+                                        <div class="col-md-3 offset-md-1" >
                                             <div class="form-group">
                                                 <label for="solicitud_pqrs">Titulo de solicitud</label>
                                                 <input type="text" class="form-control" name="solicitud_pqrs" placeholder="Titulo de su pqrs">
@@ -92,7 +91,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-11" style="margin-left:-30px">
+                                    <div class="col-md-11" >
                                         <div class="form-group">
                                             <label for="contenido_pqrs">Contenido de solicitud</label>
 

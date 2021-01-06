@@ -158,18 +158,18 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fa fa-id-card"></i>
               <p>
-                Plan estrategico
+                Plan estratégico
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
             <li class="nav-item">
              
-              <a href="<?php echo e(route('mision.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Mision/Vision</button></a>
+              <a href="<?php echo e(route('mision.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Misión | Visión</button></a>
               </li>
               <li class="nav-item">
              
-              <a href="<?php echo e(route('politica.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Politica de calidad</button></a>
+              <a href="<?php echo e(route('politica.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Política de calidad</button></a>
               </li>
               <li class="nav-item">
           
@@ -177,14 +177,14 @@
               </li>
               <li class="nav-item">
            
-              <a href="<?php echo e(route('plan.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Plan estrategico vigente</button></a>
+              <a href="<?php echo e(route('plan.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Plan estratégico vigente</button></a>
               </li>
               <li class="nav-item">
           
               <a href="<?php echo e(route('organigrama.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Organigrama</button></a>
               </li>
               <li class="nav-item">
-              <a href="<?php echo e(route('unidades.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Unidades estrategicas de negocio</button></a>
+              <a href="<?php echo e(route('unidades.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Unidades estratégicas de <br>negocio</button></a>
               </li>
             </ul>
           </li>
@@ -218,7 +218,7 @@
               </li>
               <li class="nav-item">
               
-              <a href="<?php echo e(route('vacaciones.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Solicitu de vacaciones</button></a>
+              <a href="<?php echo e(route('vacaciones.index')); ?>"><button type="button" class="btn " style="margin-left:25px">Solicitud de vacaciones</button></a>
               </li>
 
               <li class="nav-item">
@@ -293,7 +293,7 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fa fa-bullhorn"></i>
               <p>
-              Buzon de sugerncias
+              Buzón de sugerencias
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>

@@ -3,7 +3,7 @@
 <?php $__env->startSection('content'); ?>
 <div >
 
-    <div class="titulos" style="  background-color: #113049;
+    <div class="titulos" style="  background-color: #73b6c6;
   padding: 1em; color:#fff; margin: 1em 1em 1em 0em; border-radius:5px;">
 
         <?php if($search): ?>
@@ -21,18 +21,19 @@
 <span aria-hidden="true">&times;</span>
 </button>
 </div>
+
 <div >
 
 <?php endif; ?>
         <h1>Novedades<a href="novedades/create"><br>
         <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('administrador')): ?>
-        <button type="button" class="btn btn-success btn-sm  ">Agregar
+        <button type="button" class="btn btn-success btn-sm btn-info  " >Agregar
                     novedad</button>
                 <?php endif; ?></a></h1>
 
 
     </div>
-
+    </div>
     <div>
         <div class="col-sm-3 bg-light float-right">
             <div class="card" style="background-color:transparent">
@@ -59,7 +60,7 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body" style="color:black">
-                    <h5 class="card-title"><?php echo e($novedad->cuerpo_novedad); ?></h5>
+                    <h1 class="card-title" style="color: #002537;"><strong><?php echo e($novedad->cuerpo_novedad); ?></strong></h1>
                     <p class="card-text"><?php echo e($novedad->tipo_novedad); ?></p>
                     <p class="card-text"><?php echo e($novedad->fecha_novedad); ?></p>
 
@@ -91,12 +92,17 @@
 </body>
 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('administrador')): ?>
                         <a href="<?php echo e(route('novedades.edit',$novedad->id)); ?>">
-                            
+                        <div class="float-right">
+                        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">
+                            Eliminar 
+                        </button>
                         <button type="button"
                         class="btn btn-primary btn-sm ">Actualizar</button></a>
                     
-                        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar </button>
-                    <?php endif; ?>
+                        
+                    
+                        </div>
+                        <?php endif; ?>
                     </form>
 
                 </div>
