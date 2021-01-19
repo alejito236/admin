@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 
-use App\Http\Requests\UserFormRequest;
-use App\User;
+use App\Http\Requests\VacacionesFormRequest;
+use App\Vacaciones;
 use Illuminate\Http\Request;
 
 
@@ -23,37 +23,20 @@ class VacacionesController extends Controller
             $query = trim($request->get('search'));
 
             
-            $users =User::where('name','LIKE','%'. $query .'%')
+            $vacaciones=Vacaciones::where('cuerpo_vacaciones','LIKE','%'. $query .'%')
                 ->orderBy('id','asc')
                 ->paginate(5);
-            return view('usuarios.index',['users'=>$users, 'search'=>$query]);
+            return view('vacaciones.index',['vacaciones'=>$vacaciones, 'search'=>$query]);
         }
         //$users= User::all();
         //return view('usuarios.index',['users'=>$users]);
 
     }
-    public function listarPdf(){
-
-        $usuario = User::join('id', 'name', 'email')
-              ->select('id', 'name', 'email')
-              ->orderBy('name', 'desc')->get();  
-
-        $cont=User::count();
-
-        $pdf = \PDF::loadView('pdf.nombrespdf',['usaurio'=>$usuario,'cont'=>$cont]);
-        return $pdf->download('articulos.pdf');
+   
     
-    }
-    
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        return view('usuarios.create');
+        return view('vacaciones.create');
 
         
     }
@@ -61,16 +44,19 @@ class VacacionesController extends Controller
  
     public function store(Request $request)
     {
-        $usuario = new User();
-        $usuario-> name= request('name');
-        $usuario-> email= request('email');
-        $usuario-> password= request('password');
+        $vacacion = new Vacaciones();
+        $vacacion-> cuerpo_vacaciones= request('cuerpo_vacaciones');
+        $vacacion-> apellido_vacaciones= request('apellido_vacaciones');
+        $vacacion-> tipsolicitud_vacaciones= request('tipsolicitud_vacaciones');
+        $vacacion-> telefono_vacaciones= request('telefono_vacaciones');
+        $vacacion-> area_vacaciones= request('area_vacaciones');
+        $vacacion-> fecha_vacaciones= request('fecha_vacaciones');
 
-        $usuario->save();
-        session()->flash('exito', 'El usuario se creo con exito');
+        $vacacion->save();
+        session()->flash('exito', 'La solicitud se creo con exito!! le notificaremos pronto si fue aceptada');
 
 
-        return redirect('/usuarios');
+        return redirect('/vacaciones');
 
     }
 
@@ -82,7 +68,7 @@ class VacacionesController extends Controller
      */
     public function show($id)
     {
-        return view('usuarios.show',['user'=>User::findOrFail($id)]);
+        return view('vacaciones.show',['vaca'=>Vacaciones::findOrFail($id)]);
     }
 
     /**
@@ -93,7 +79,7 @@ class VacacionesController extends Controller
      */
     public function edit($id)
     {
-        return view('usuarios.edit',['user'=>User::findOrFail($id)]);
+        return view('vacaciones.edit',['vaca'=>Vacaciones::findOrFail($id)]);
     }
 
     /**
@@ -103,18 +89,23 @@ class VacacionesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UserFormRequest $request, $id)
+    public function update(VacacionesFormRequest $request, $id)
     {
-        $usuario = User::findOrFail($id);
-        $usuario-> name= $request->get('name');
-        $usuario-> email= $request->get('email');
+        $vacacion = Vacaciones::findOrFail($id);
+        $vacacion-> cuerpo_vacaciones= $request->get('cuerpo_vacaciones');
+        $vacacion-> apellido_vacaciones= $request->get('apellido_vacaciones');
+        $vacacion-> tipsolicitud_vacaciones= $request->get('tipsolicitud_vacaciones');
+        $vacacion-> telefono_vacaciones= $request->get('telefono_vacaciones');
+        $vacacion-> area_vacaciones= $request->get('area_vacaciones');
+        $vacacion-> fecha_vacaciones= $request->get('fecha_vacaciones');
+       
 
-        $usuario->update();
+        $vacacion->update();
 
-        session()->flash('exito', 'El usuario se actualizo con exito');
+        session()->flash('exito', 'La solicitud se actualizo con exito');
 
 
-        return redirect('/usuarios');
+        return redirect('/vacaciones');
     }
 
     /**
@@ -125,13 +116,13 @@ class VacacionesController extends Controller
      */
     public function destroy($id)
     {
-        $usuario= User::findOrFail($id);
-        $usuario-> delete();
-        session()->flash('exito', 'El usuario se elimino con exito');
+        $vacacion= Vacaciones::findOrFail($id);
+        $vacacion-> delete();
+        session()->flash('exito', 'la solicitud se elimino con exito');
 
         
 
-        return redirect('/usuarios');
+        return redirect('/vacaciones');
     }
    
 }

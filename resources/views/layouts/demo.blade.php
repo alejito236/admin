@@ -84,10 +84,18 @@
                 </form>
 
                 <!-- Right navbar links -->
-                <a style="position:absolute;right:15px; width:auto" class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                           document.getElementById('logout-form').submit();">
-                                    Cerrar Sesión
-                                </a>
+                <div  class="dropdown">
+  <button style="position:absolute;right:-1080px; width:auto; " class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div  class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="{{ route('logout') }}"onclick="event.preventDefault();
+                                           document.getElementById('logout-form').submit();">cerrar sesion</a>
+  </div>
+</div>
+               
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                     style="display: none;">

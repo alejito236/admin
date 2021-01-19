@@ -10,7 +10,11 @@
     <div class="float-right">
                             <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
                         </div>
+    <p class="lead">{{$user->tipodocumentol}}</p>
+    <p class="lead">{{$user->telefono}}</p>
+    <p class="lead">{{$user->fecha_cumpleanios}}</p>
     <p class="lead">{{$user->email}}</p>
+  
     
   </div>
 </div>

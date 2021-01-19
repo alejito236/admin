@@ -15,9 +15,8 @@
 
 @endif
 
-<div class="titulos" style="  background-color: #113049;
-  padding: 1em; color:#fff; margin: 1em 1em 1em 0em; border-radius:5px;">
-
+<div class="titulos" style="  background-color: #73b6c6;
+  padding: 1em; color:#fff; margin: 1em 1em 1em 0em; border-radius:5px; ">
         @if($search)
         <div class="alert alert-primary" role="alert">
             Los resultados de tu busqueda '{{$search}}' son:
@@ -28,34 +27,43 @@
    
         
    
+        <h1>Solicitudes de Vacaciones<a href="vacaciones/create"><br><button type="button" class="btn btn-info btn-success btn-sm "> Agenda tus vacaciones
+                    </button> </a></h1>
+
+
     </div>
 
    
      
     
-
   
 
-<table class="table" style="color:black">
+<table class="table" style="color:black" >
   <thead>
     <tr>
-      <th scope="col">ID</th>
-      <th scope="col">NOMBRE</th>
-      <th scope="col">CORREO</th>
-      <th scope="col">OPCIONES</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Tipo Solicitud</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Área de Trabajo</th>
+      <th scope="col">Fecha</th>
 
      
     </tr>
   </thead>
   <tbody>
     <tr>
-    @foreach($users as $user)
-      <th scope="row">{{$user->id}}</th>
-      <td>{{$user->name}}</td>
-      <td>{{$user->email}}</td>
-      <td>
+    @foreach($vacaciones as $vaca)
+     
+      <td>{{$vaca->cuerpo_vacaciones}}</td>
+      <td>{{$vaca->apellido_vacaciones}}</td>
+      <td>{{$vaca->tipsolicitud_vacaciones}}</td>
+      <td>{{$vaca->telefono_vacaciones}}</td>
+      <td>{{$vaca->area_vacaciones}}</td>
+      <td>{{$vaca->fecha_vacaciones}}</td>
+     
       
-      <form action="{{route('usuarios.destroy',$user->id)}}" method=POST>
+      <form action="{{route('vacaciones.destroy',$vaca->id)}}" method=POST>
         @csrf
         @method('DELETE')
         <body>
@@ -64,11 +72,11 @@
   <div class="modal-dialog ">
     <div class="modal-content">
       <div class="modal-header">
-      Usuarios
+      <p class="text-dark">Solicitudes de vacaciones</p>
       <button class="close" data-dismiss="modal">&times;</button>
        </div>
        <div class="modal-body">
-       ¿Estas seguro de eliminar el usuario?
+       <p class="text-dark">¿Estas seguro de eliminar la solicitud?</p>
        </div>
        <div class= "modal-footer">
        <button type="submit" class="btn btn-primary">Aceptar</button>
@@ -81,9 +89,14 @@
 
        
 </body>
-        <a href="{{route('usuarios.show',$user->id)}}"><button type="button" class="btn btn-secondary">Ver</button></a>
-       
+        <a href="{{route('vacaciones.show',$vaca->id)}}" target="_blank"><button type="button" class="btn btn-secondary btn-sm " >Ver</button></a>
+    
+        <a href="{{route('vacaciones.edit',$vaca->id)}}"><button type="button" class="btn btn-primary btn-sm ">Actualizar</button></a>
 
+        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal"
+                                    data-target="#modal1">
+                                    Eliminar
+                                </button>
       </form>
       
       </td>
@@ -98,14 +111,14 @@
 
   <div class="row">
     <div class="mx-auto">
-       {{$users->links()}}
+       {{$vacaciones->links()}}
       </div>
     </div>
   </div>
-  </div>
+</div>
 
   
 
-  
   
 @endsection
+

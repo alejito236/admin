@@ -10,7 +10,11 @@
     <div class="float-right">
                             <img src="<?php echo e(asset('dist/img/user2-160x160.jpg')); ?>" class="img-circle elevation-2" alt="User Image">
                         </div>
+    <p class="lead"><?php echo e($user->tipodocumentol); ?></p>
+    <p class="lead"><?php echo e($user->telefono); ?></p>
+    <p class="lead"><?php echo e($user->fecha_cumpleanios); ?></p>
     <p class="lead"><?php echo e($user->email); ?></p>
+  
     
   </div>
 </div>

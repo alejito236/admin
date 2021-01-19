@@ -67,6 +67,8 @@ class UserController extends Controller
         $usuario-> password= request('password');
 
         $usuario->save();
+
+
         session()->flash('exito', 'El usuario se creo con exito');
 
 
@@ -108,6 +110,8 @@ class UserController extends Controller
         $usuario = User::findOrFail($id);
         $usuario-> name= $request->get('name');
         $usuario-> email= $request->get('email');
+        
+        
 
         $usuario->update();
 

@@ -28,8 +28,8 @@
    
         
    
-        <h1>lista de usuarios<a href="usuarios/create"><br><?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('administrador')): ?><button type="button" class="btn btn-info btn-success btn-sm ">Agregar
-                    Usuario</button> <?php endif; ?></a></h1>
+        <h1>lista de usuarios<a href="usuarios/create"><br><button type="button" class="btn btn-info btn-success btn-sm ">Agregar
+                    Usuario</button> </a></h1>
 
 
     </div>
@@ -45,8 +45,9 @@
     <tr>
       <th scope="col">ID</th>
       <th scope="col">NOMBRE</th>
-      <th scope="col">CORREO</th>
+      <th scope="col">Email</th>
       <th scope="col">OPCIONES</th>
+    
 
      
     </tr>
@@ -86,10 +87,10 @@
        
 </body>
         <a href="<?php echo e(route('usuarios.show',$user->id)); ?>" target="_blank"><button type="button" class="btn btn-secondary btn-sm ">Ver</button></a>
-        <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('administrador')): ?>
+       
         <a href="<?php echo e(route('usuarios.edit',$user->id)); ?>"><button type="button" class="btn btn-primary btn-sm ">Actualizar</button></a>
         <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar</button>
-<?php endif; ?>
+
       </form>
       
       </td>
