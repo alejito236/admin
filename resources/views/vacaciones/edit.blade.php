@@ -22,16 +22,16 @@
                 @csrf
                 <div class="form-group">
                     <label for="cuerpo_vacaciones">Nombre</label>
-                    <input type="text" class="form-control" name="cuerpo_vacaciones" value='{{$vaca->cuerpo_vacaciones}}' placeholder="Escribe tu nombre">
+                    <input type="text" class="form-control" name="cuerpo_vacaciones" value='{{$vaca->cuerpo_vacaciones}}' placeholder="Escribe tu nombre" required>
                </div>
                <div class="form-group">
                     <label for="apellido_vacaciones">Apellido</label>
-                    <input type="text" class="form-control" name="apellido_vacaciones" value='{{$vaca->apellido_vacaciones}}' placeholder="Escribe tu nombre">
+                    <input type="text" class="form-control" name="apellido_vacaciones" value='{{$vaca->apellido_vacaciones}}' placeholder="Escribe tu nombre" required>
                </div>
 
                <div class="form-group">
                     <label for="tipsolicitud_vacaciones">Estado de peticion</label>
-                    <select input type="text" class="form-control" name="tipsolicitud_vacaciones" placeholder="Select">
+                    <select input type="text" class="form-control" name="tipsolicitud_vacaciones" placeholder="Select" required>
                                             <option value="Pendiente">Pendiente</option>
                                                 <option value="Revisado">Revisado</option>
                                                 >
@@ -39,11 +39,11 @@
                 </div>
                <div class="form-group">
                     <label for="telefono_vacaciones">Telefono</label>
-                    <input type="text" class="form-control" name="telefono_vacaciones" value='{{$vaca->telefono_vacaciones}}' placeholder="Escribe tu nombre">
+                    <input type="text" class="form-control" name="telefono_vacaciones" value='{{$vaca->telefono_vacaciones}}' placeholder="Escribe tu nombre" required>
                </div>
                <div class="form-group">
                     <label for="area_vacaciones">Area de trabajo</label>
-                    <select input type="text" class="form-control" name="area_vacaciones" placeholder="Select">
+                    <select input type="text" class="form-control" name="area_vacaciones" placeholder="Select" required>
                                             <option value="Mantenimiento">Mantenimiento</option>
                                                 <option value="Desarollo">Desarollo</option>
                                                 <option value="Colaborador">Colaborador</option>
@@ -53,7 +53,7 @@
 
                <div class="form-group">
                     <label for="fecha_vacaciones">Fecha</label>
-                    <input type="date" class="form-control" name="fecha_vacaciones" value='{{$vaca->fecha_vacaciones}}' placeholder="Escribe tu nombre">
+                    <input type="date" class="form-control" name="fecha_vacaciones" value='{{$vaca->fecha_vacaciones}}' placeholder="Escribe tu nombre" required>
                </div>
        
        

@@ -9,23 +9,23 @@
                 @csrf
                 <div class="form-group">
                     <label for="cuerpo_vacaciones">Nombre</label>
-                    <input type="text" class="form-control" name="cuerpo_vacaciones" placeholder="Escribe tu nombre">
+                    <input type="text" class="form-control" name="cuerpo_vacaciones" placeholder="Escribe tu nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="apellido_vacaciones">Apellido</label>
-                    <input type="text" class="form-control" name="apellido_vacaciones" placeholder="Escribe tu apellido">
+                    <input type="text" class="form-control" name="apellido_vacaciones" placeholder="Escribe tu apellido" required>
                 </div>
                 <div class="form-group">
                     <label for="tipsolicitud_vacaciones">Tipo de solicitud</label>
-                    <input type="text" class="form-control" name="tipsolicitud_vacaciones" placeholder="Escribe la solcitud">
+                    <input type="text" class="form-control" name="tipsolicitud_vacaciones" placeholder="Escribe la solcitud" required>
                 </div>
                 <div class="form-group">
                     <label for="telefono_vacaciones">Telefono o celular</label>
-                    <input type="text" class="form-control" name="telefono_vacaciones" placeholder="Escribe tu telefono o celular">
+                    <input type="text" class="form-control" name="telefono_vacaciones" placeholder="Escribe tu telefono o celular" required>
                 </div>
                 <div class="form-group">
                     <label for="area_vacaciones">Area de trabajo</label>
-                    <select input type="text" class="form-control" name="area_vacaciones" placeholder="Select">
+                    <select input type="text" class="form-control" name="area_vacaciones" placeholder="Select" required>
                                             <option value="Mantenimiento">Mantenimiento</option>
                                                 <option value="Desarollo">Desarollo</option>
                                                 <option value="Colaborador">Colaborador</option>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="form-group">
                     <label for="fecha_vacaciones">Fecha </label>
-                    <input type="date" class="form-control" name="fecha_vacaciones">
+                    <input type="date" class="form-control" name="fecha_vacaciones" required>
                 </div>
 
                

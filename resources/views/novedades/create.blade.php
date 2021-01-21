@@ -8,19 +8,19 @@
                 @csrf
                 <div class="form-group">
                     <label for="cuerpo_novedad">Titulo Novedad</label>
-                    <input type="text" class="form-control" name="cuerpo_novedad" placeholder="Escribe el titulo de la novedad">
+                    <input type="text" class="form-control" name="cuerpo_novedad" placeholder="Escribe el titulo de la novedad" required>
                 </div>
                 <div class="form-group">
                     <label for="tipo_novedad">Cotenido novedad</label>
-                    <input type="text" class="form-control" name="tipo_novedad" placeholder="Escribe el contenido de la novedad">
+                    <input type="text" class="form-control" name="tipo_novedad" placeholder="Escribe el contenido de la novedad" required>
                 </div>
                 <div class="form-group">
                     <label for="fecha_novedad">Fecha novedad</label>
-                    <input type="date" class="form-control" name="fecha_novedad">
+                    <input type="date" class="form-control" name="fecha_novedad" required>
                 </div>
                 <div class="form-group">
                     <label for="imagen_novedad">imagen novedad</label>
-                    <input type="file" class="form-control" name="imagen_novedad">
+                    <input type="file" class="form-control" name="imagen_novedad" required>
                 </div>
 
                 </body>

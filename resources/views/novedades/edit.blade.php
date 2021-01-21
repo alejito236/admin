@@ -22,17 +22,17 @@
                 @csrf
                 <div class="form-group">
                     <label for="cuerpo_novedad">Titulo Novedad</label>
-                    <input type="text" class="form-control" name="cuerpo_novedad" value='{{$novedad->cuerpo_novedad}}' placeholder="Escribe tu nombre">
+                    <input type="text" class="form-control" name="cuerpo_novedad" value='{{$novedad->cuerpo_novedad}}' placeholder="Escribe tu nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="tipo_novedad">Descripcion Novedad</label>
                     <textarea  rows="14"  type="text-area" class="form-control" name="tipo_novedad" 
-                     placeholder="Escribe tu correo">
+                     placeholder="Escribe tu correo" required>
                     {{$novedad->tipo_novedad}}</textarea> </div>
 
                 <div class="form-group">
                     <label for="fecha_novedad">fecha_novedad</label>
-                    <input type="date" class="form-control" name="fecha_novedad" value='{{$novedad->fecha_novedad}}' placeholder="Escribe tu correo">
+                    <input type="date" class="form-control" name="fecha_novedad" value='{{$novedad->fecha_novedad}}' placeholder="Escribe tu correo" required>
                 </div>
 
   

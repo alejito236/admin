@@ -22,17 +22,17 @@
                 @csrf
                 <div class="form-group">
                     <label for="cuerpo_capacitacion">Titulo capacitacion</label>
-                    <input type="text" class="form-control" name="cuerpo_capacitacion" value='{{$capacitacion->cuerpo_capacitacion}}' placeholder="Escribe tu nombre">
+                    <input type="text" class="form-control" name="cuerpo_capacitacion" value='{{$capacitacion->cuerpo_capacitacion}}' placeholder="Escribe tu nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="tipo_capacitacion">Descripcion capacitacion</label>
                     <textarea  rows="14"  type="text-area" class="form-control" name="tipo_capacitacion" 
-                     placeholder="Escribe tu correo">
+                     placeholder="Escribe tu correo" required>
                     {{$capacitacion->tipo_capacitacion}}</textarea> </div>
 
                 <div class="form-group">
                     <label for="fecha_capacitacion">fecha_capacitacion</label>
-                    <input type="date" class="form-control" name="fecha_capacitacion" value='{{$capacitacion->fecha_capacitacion}}' placeholder="Escribe tu correo">
+                    <input type="date" class="form-control" name="fecha_capacitacion" value='{{$capacitacion->fecha_capacitacion}}' placeholder="Escribe tu correo" required>
                 </div>
 
        

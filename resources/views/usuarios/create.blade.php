@@ -8,21 +8,21 @@
     @csrf
   <div class="form-group">
     <label for="name">Nombre</label>
-    <input type="text" class="form-control" name="name" placeholder="Escribe tu nombre">
+    <input type="text" class="form-control" name="name" placeholder="Escribe tu nombre" required>
   </div>
  
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" class="form-control" name="email" placeholder="Escribe tu correo">
+    <input type="email" class="form-control" name="email" placeholder="Escribe tu correo" required>
   </div>
   <div class="form-group">
     <label for="password">Password</label>
-    <input type="password" class="form-control" name="password">
+    <input type="password" class="form-control" name="password" required>
   </div>
 
   <div class="form-group">
     <label for="password"> confirm Password</label>
-    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" required>
   </div>
 
   </body>

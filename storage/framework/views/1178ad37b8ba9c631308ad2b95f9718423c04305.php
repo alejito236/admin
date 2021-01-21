@@ -22,11 +22,11 @@
                 <?php echo csrf_field(); ?>
                 <div class="form-group">
                     <label for="name">Nombre</label>
-                    <input type="text" class="form-control" name="name" value='<?php echo e($user->name); ?>' placeholder="Escribe tu nombre">
+                    <input type="text" class="form-control" name="name" value='<?php echo e($user->name); ?>' placeholder="Escribe tu nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" value='<?php echo e($user->email); ?>' placeholder="Escribe tu correo">
+                    <input type="email" class="form-control" name="email" value='<?php echo e($user->email); ?>' placeholder="Escribe tu correo" required>
                 </div>
 
                 

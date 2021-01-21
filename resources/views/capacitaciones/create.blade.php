@@ -9,15 +9,15 @@
                 @csrf
                 <div class="form-group">
                     <label for="cuerpo_capacitacion">Titulo capacitacion</label>
-                    <input type="text" class="form-control" name="cuerpo_capacitacion" placeholder="Escribe el titulo de la capacitacion">
+                    <input type="text" class="form-control" name="cuerpo_capacitacion" placeholder="Escribe el titulo de la capacitacion" required>
                 </div>
                 <div class="form-group">
                     <label for="tipo_capacitacion">Contenido capacitacion</label>
-                    <input type="text" class="form-control" name="tipo_capacitacion" placeholder="Escribe el contenido de la capacitacion">
+                    <input type="text" class="form-control" name="tipo_capacitacion" placeholder="Escribe el contenido de la capacitacion" required>
                 </div>
                 <div class="form-group">
                     <label for="fecha_capacitacion">Fecha capacitacion</label>
-                    <input type="date" class="form-control" name="fecha_capacitacion">
+                    <input type="date" class="form-control" name="fecha_capacitacion" required>
                 </div>
                
                 </body>
