@@ -15,7 +15,7 @@
         @if($flash = Session::get('exito') )
  
  <div class="alert alert-success alert-dismissible fade show" role="alert">
-<strong>Genial!</strong> {{ $flash  }}
+Genial! {{ $flash  }}
 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
 <span aria-hidden="true">&times;</span>
 </button>
@@ -59,7 +59,7 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body" style="color:black">
-                    <h1 class="card-title" style="color: #002537;"><strong>{{$novedad->cuerpo_novedad}}</strong></h1>
+                    <h2 class="card-title" style="color: #002537;">{{$novedad->cuerpo_novedad}}</h2>
                     <p class="card-text">{{$novedad->tipo_novedad}}</p>
                     <p class="card-text">{{$novedad->fecha_novedad}}</p>
 
@@ -127,3 +127,4 @@
 </div>
 </div>
 @endsection
+
