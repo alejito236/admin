@@ -2,26 +2,24 @@
 
 @section('content')
 <center>
-
+<section class="content ">
 <div class="col-md-12">
-
-    <div class="card">
-        <div class="card-body">
-
-
-            <h5><strong class="text-center">Calendario</strong></h5>
-
-            
-
-        </div>
-    </div>
-
+          <!-- /.col -->
+            <div class="card card-primary">
+            <h3>FELICIDADES ES UN GRAN DIA</h3>
+              <div class="card-body p-0">
+                <!-- THE CALENDAR -->
+                <div style="color:black; background:white;" id="calendar"></div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        <!-- /.row -->
+      <!-- /.container-fluid -->
+    </section>
 </div>
-
-<div class="row">
-
-
-</div><!-- /.card -->
 </center>
 <link rel="stylesheet" href="../plugins/fullcalendar/main.min.css">
   <link rel="stylesheet" href="../plugins/fullcalendar-daygrid/main.min.css">
@@ -32,66 +30,24 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="sticky-top mb-3">
-
-              <!-- /.card -->
-
-                  <!-- /btn-group -->
-               
-                  <!-- /input-group -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col -->
-          <div class="col-md-9">
-            <div class="card card-primary">
-              <div class="card-body p-0">
-                <!-- THE CALENDAR -->
-                <div style="color:black; background:white;" id="calendar"></div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
 <!-- jQuery -->
-<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="{{asset("plugins/jquery/jquery.min.js")}}"></script>
 <!-- Bootstrap -->
-<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset("plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
 <!-- jQuery UI -->
-<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="{{asset("plugins/jquery-ui/jquery-ui.min.js")}}"></script>
 <!-- AdminLTE App -->
-<script src="../dist/js/adminlte.min.js"></script>
+<script src="{{asset("dist/js/adminlte.min.js")}}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../dist/js/demo.js"></script>
+<script src="{{asset("dist/js/demo.js")}}"></script>
 <!-- fullCalendar 2.2.5 -->
-<script src="../plugins/moment/moment.min.js"></script>
-<script src="../plugins/fullcalendar/main.min.js"></script>
-<script src="../plugins/fullcalendar-daygrid/main.min.js"></script>
-<script src="../plugins/fullcalendar-timegrid/main.min.js"></script>
-<script src="../plugins/fullcalendar-interaction/main.min.js"></script>
-<script src="../plugins/fullcalendar-bootstrap/main.min.js"></script>
+<script src="{{asset("plugins/moment/moment.min.js")}}"></script>
+<script src="{{asset("plugins/fullcalendar/main.min.js")}}"></script>
+<script src="{{asset("plugins/fullcalendar-daygrid/main.min.js")}}"></script>
+<script src="{{asset("plugins/fullcalendar-timegrid/main.min.js")}}"></script>
+<script src="{{asset("plugins/fullcalendar-interaction/main.min.js")}}"></script>
+<script src="{{asset("plugins/fullcalendar-bootstrap/main.min.js")}}"></script>
+<script src="{{asset("plugins/fullcalendar/locale/es.js")}}"></script>
 <!-- Page specific script -->
 <script>
   $(function () {
@@ -144,12 +100,15 @@
     var events =calendario
     
     var calendar = new Calendar(calendarEl, {
+      locales:'es',
       plugins: [ 'bootstrap', 'interaction', 'dayGrid', 'timeGrid' ],
+      locales:'es',
       header    : {
         left  : 'prev,next today',
         center: 'title',
         right : 'dayGridMonth,timeGridWeek,timeGridDay'
       },
+      
       'themeSystem': 'bootstrap',
       //Random default events
       events: events,
@@ -160,6 +119,7 @@
 
     calendar.render();
      $('#calendar').fullCalendar()
+     
 
     /* ADDING EVENTS */
     var currColor = '#3c8dbc' //Red by default
