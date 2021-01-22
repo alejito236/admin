@@ -173,7 +173,7 @@ i span{
 <div class="container" style="color:#000000;font-family: 'Montserrat Alternates', sans-serif; ">
 <div >
       <div class="content">
-        <header>{{ __('Login') }}</header>
+        <p> <strong>Ingrese sus credenciales</strong></p>
         <form method="POST" action="{{ route('login') }}">
         @csrf
         <div >
@@ -235,3 +235,4 @@ i span{
       });
       </script>
 @endsection
+
