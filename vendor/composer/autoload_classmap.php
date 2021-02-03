@@ -6,9 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Calendario' => $baseDir . '/app/Calendario.php',
     'App\\Capacitaciones' => $baseDir . '/app/Capacitaciones.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Helpers\\Helpers' => $baseDir . '/app/Helpers/Helpers.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
@@ -18,10 +20,11 @@ return array(
     'App\\Http\\Controllers\\CapacitacionesController' => $baseDir . '/app/Http/Controllers/CapacitacionesController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
-    'App\\Http\\Controllers\\Manuales' => $baseDir . '/app/Http/Controllers/Manuales.php',
+    'App\\Http\\Controllers\\Manuales' => $baseDir . '/app/Http/Controllers/manuales.php',
     'App\\Http\\Controllers\\NovedadesController' => $baseDir . '/app/Http/Controllers/NovedadesController.php',
     'App\\Http\\Controllers\\PqrsController' => $baseDir . '/app/Http/Controllers/PqrsController.php',
     'App\\Http\\Controllers\\UserController' => $baseDir . '/app/Http/Controllers/UserController.php',
+    'App\\Http\\Controllers\\VacacionesController' => $baseDir . '/app/Http/Controllers/VacacionesController.php',
     'App\\Http\\Controllers\\biografias' => $baseDir . '/app/Http/Controllers/biografias.php',
     'App\\Http\\Controllers\\copasst' => $baseDir . '/app/Http/Controllers/copasst.php',
     'App\\Http\\Controllers\\cumple' => $baseDir . '/app/Http/Controllers/cumple.php',
@@ -63,6 +66,7 @@ return array(
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\Role' => $baseDir . '/app/Role.php',
     'App\\User' => $baseDir . '/app/User.php',
+    'App\\Vacaciones' => $baseDir . '/app/Vacaciones.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'Asm89\\Stack\\Cors' => $vendorDir . '/asm89/stack-cors/src/Cors.php',
     'Asm89\\Stack\\CorsService' => $vendorDir . '/asm89/stack-cors/src/CorsService.php',

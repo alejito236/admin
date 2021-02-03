@@ -658,10 +658,10 @@ body {
   <a id="show-sidebar" class="btn btn-sm btn-dark show-sidebar" href="#">
     <i class="fas fa-bars"></i>
   </a>
-
+  
   <a href="#"><img src="http://admin.test/dist/images/logo montichelo.png" alt="AdminLTE Logo" class="brand-image " style="height: 40px;"></a>
 <div class="boton_salir">
-<img src="http://admin.test/dist/img/user2-160x160.jpg" style="border-radius: 50%;width:40px">
+<img src="http://admin.test/dist/img/user2-160x160.jpg" style="border-radius: 50%;width:40px" >
 <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                            document.getElementById('logout-form').submit();">
                                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
@@ -670,6 +670,18 @@ body {
                                 </form>
 <i class="fa fa-power-off salir" style="margin-left:15px"></i>
 </a>
+</div>
+<div class="dropdown show">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    imgen
+  
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
 </div>
 <script>
     const $drowdownArrow = document.querySelector('.fa-angle-down');

@@ -35,18 +35,19 @@
 
    
      
-    
+    <div class="contai">
   
 
 <table class="table" style="color:black" >
   <thead>
     <tr>
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellido</th>
-      <th scope="col">Tipo Solicitud</th>
-      <th scope="col">Telefono</th>
-      <th scope="col">Área de Trabajo</th>
-      <th scope="col">Fecha</th>
+      <th  scope="col">Nombre</th>
+      <th  scope="col">Apellido</th>
+      <th  scope="col">Tipo Solicitud</th>
+      <th  scope="col">Telefono</th>
+      <th  scope="col">Área de Trabajo</th>
+      <th  scope="col">Fecha</th>
+      <th scope="col">OPCIONES</th>
 
      
     </tr>
@@ -61,11 +62,14 @@
       <td>{{$vaca->telefono_vacaciones}}</td>
       <td>{{$vaca->area_vacaciones}}</td>
       <td>{{$vaca->fecha_vacaciones}}</td>
-     
+     <td>
       
       <form action="{{route('vacaciones.destroy',$vaca->id)}}" method=POST>
         @csrf
         @method('DELETE')
+
+
+
         <body>
   <div class="container" >
 <div class="modal fade" tabindex="-1" id="modal1">
@@ -89,19 +93,20 @@
 
        
 </body>
-        <a href="{{route('vacaciones.show',$vaca->id)}}" target="_blank"><button type="button" class="btn btn-secondary btn-sm " >Ver</button></a>
-    
-        <a href="{{route('vacaciones.edit',$vaca->id)}}"><button type="button" class="btn btn-primary btn-sm ">Actualizar</button></a>
 
-        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal"
-                                    data-target="#modal1">
-                                    Eliminar
+        <a href="{{route('vacaciones.show',$vaca->id)}}" target="_blank"><button type="button" class="btn btn-secondary btn-sm "  >Ver</button></a>
+ 
+        <a href="{{route('vacaciones.edit',$vaca->id)}}"><button type="button" class="btn btn-primary btn-sm " >Actualizar</button></a>
+ 
+       
+       
                                 </button>
       </form>
       
       </td>
 
     </tr>
+    </div>
  
     
     @endforeach

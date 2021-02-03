@@ -528,9 +528,11 @@ class ComposerStaticInitb2c8014e98e88b6bb38ca563871247c3
     );
 
     public static $classMap = array (
+        'App\\Calendario' => __DIR__ . '/../..' . '/app/Calendario.php',
         'App\\Capacitaciones' => __DIR__ . '/../..' . '/app/Capacitaciones.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Helpers\\Helpers' => __DIR__ . '/../..' . '/app/Helpers/Helpers.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -540,10 +542,11 @@ class ComposerStaticInitb2c8014e98e88b6bb38ca563871247c3
         'App\\Http\\Controllers\\CapacitacionesController' => __DIR__ . '/../..' . '/app/Http/Controllers/CapacitacionesController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
-        'App\\Http\\Controllers\\Manuales' => __DIR__ . '/../..' . '/app/Http/Controllers/Manuales.php',
+        'App\\Http\\Controllers\\Manuales' => __DIR__ . '/../..' . '/app/Http/Controllers/manuales.php',
         'App\\Http\\Controllers\\NovedadesController' => __DIR__ . '/../..' . '/app/Http/Controllers/NovedadesController.php',
         'App\\Http\\Controllers\\PqrsController' => __DIR__ . '/../..' . '/app/Http/Controllers/PqrsController.php',
         'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
+        'App\\Http\\Controllers\\VacacionesController' => __DIR__ . '/../..' . '/app/Http/Controllers/VacacionesController.php',
         'App\\Http\\Controllers\\biografias' => __DIR__ . '/../..' . '/app/Http/Controllers/biografias.php',
         'App\\Http\\Controllers\\copasst' => __DIR__ . '/../..' . '/app/Http/Controllers/copasst.php',
         'App\\Http\\Controllers\\cumple' => __DIR__ . '/../..' . '/app/Http/Controllers/cumple.php',
@@ -585,6 +588,7 @@ class ComposerStaticInitb2c8014e98e88b6bb38ca563871247c3
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Role' => __DIR__ . '/../..' . '/app/Role.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\Vacaciones' => __DIR__ . '/../..' . '/app/Vacaciones.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',

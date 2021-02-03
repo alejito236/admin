@@ -173,7 +173,7 @@ i span{
 <div class="container" style="color:#000000;font-family: 'Montserrat Alternates', sans-serif; ">
 <div >
       <div class="content">
-        <header><?php echo e(__('Login')); ?></header>
+        <p> <strong>Ingrese sus credenciales</strong></p>
         <form method="POST" action="<?php echo e(route('login')); ?>">
         <?php echo csrf_field(); ?>
         <div >
@@ -263,5 +263,6 @@ unset($__errorArgs, $__bag); ?>
       });
       </script>
 <?php $__env->stopSection(); ?>
+
 
 <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\admin\resources\views/auth/login.blade.php ENDPATH**/ ?>
