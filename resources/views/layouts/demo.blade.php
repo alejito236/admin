@@ -144,6 +144,7 @@ body {
 /*--------------------sidebar-brand----------------------*/
 
 .sidebar-wrapper .sidebar-brand {
+  background: #4caad4;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -158,6 +159,12 @@ body {
 .sidebar-wrapper .sidebar-brand #close-sidebar {
   cursor: pointer;
   font-size: 20px;
+}
+i{
+  color: #ffffff;
+}
+i:hover{
+  color: #b26523;
 }
 /*--------------------sidebar-header----------------------*/
 
@@ -411,7 +418,7 @@ body {
 /*-----------------------------chiller-theme-------------------------------------------------*/
 /*Color importante*/
 .chiller-theme .sidebar-wrapper {
-    background: #4caad4;
+    background: #fefefe;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-header,
@@ -433,7 +440,7 @@ body {
 .chiller-theme .sidebar-wrapper .sidebar-brand>a,
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a,
 .chiller-theme .sidebar-footer>a {
-    color: #ffffff;
+    color: #000000;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a,
@@ -456,7 +463,7 @@ body {
 .chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
 .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus+span,
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
-    color: #b58258;
+    color: #ffffff;
     text-shadow:0px 0px 10px rgba(22, 199, 255, 0.5);
 }
 
@@ -464,7 +471,7 @@ body {
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div,
 .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
 .chiller-theme .sidebar-wrapper .sidebar-search .input-group-text {
-    background: #009cc4;
+    background: #4caad4;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu .header-menu span {
