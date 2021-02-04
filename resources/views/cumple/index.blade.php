@@ -38,8 +38,6 @@
 <script src="{{asset("plugins/jquery-ui/jquery-ui.min.js")}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset("dist/js/adminlte.min.js")}}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{asset("dist/js/demo.js")}}"></script>
 <!-- fullCalendar 2.2.5 -->
 <script src="{{asset("plugins/moment/moment.min.js")}}"></script>
 <script src="{{asset("plugins/fullcalendar/main.min.js")}}"></script>
@@ -47,7 +45,8 @@
 <script src="{{asset("plugins/fullcalendar-timegrid/main.min.js")}}"></script>
 <script src="{{asset("plugins/fullcalendar-interaction/main.min.js")}}"></script>
 <script src="{{asset("plugins/fullcalendar-bootstrap/main.min.js")}}"></script>
-<script src="{{asset("plugins/fullcalendar/locale/es.js")}}"></script>
+<script src="{{asset("plugins/fullcalendar/locales-all.js")}}"></script>
+  
 <!-- Page specific script -->
 <script>
   $(function () {
@@ -97,12 +96,12 @@
     // -----------------------------------------------------------------
     var $calendar = $('[data-toggle="calendar"]');
     var calendario={!! json_encode($calendario) !!};
-    var events =calendario
+    var events =calendario;
+
     
     var calendar = new Calendar(calendarEl, {
-      locales:'es',
       plugins: [ 'bootstrap', 'interaction', 'dayGrid', 'timeGrid' ],
-      locales:'es',
+      locale: 'es',
       header    : {
         left  : 'prev,next today',
         center: 'title',
