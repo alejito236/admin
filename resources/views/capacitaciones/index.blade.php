@@ -96,7 +96,7 @@
                         @can('administrador')
                         <a href="{{route('capacitaciones.edit',$capacitacion->id)}}">
                             <div class="float-right">
-                                <button type="button" class="btn btn-danger btn-sm " data-toggle="modal"
+                                <button type="button" class="btn btn-secondary btn-sm " data-toggle="modal"
                                     data-target="#modal1">
                                     Eliminar
                                 </button>

@@ -76,7 +76,7 @@
        </div>
        <div class= "modal-footer">
        <button type="submit" class="btn btn-primary">Aceptar</button>
-       <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+       <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
        </div>
       </div>
     </div>
@@ -85,16 +85,17 @@
 
        
 </body>
-        <a href="{{route('usuarios.show',$user->id)}}" target="_blank"><button type="button" class="btn btn-secondary btn-sm ">Ver</button></a>
+        <a href="{{route('usuarios.show',$user->id)}}" target="_blank"><button type="button" class="btn btn-info btn-sm ">Ver</button></a>
        
         <a href="{{route('usuarios.edit',$user->id)}}"><button type="button" class="btn btn-primary btn-sm ">Actualizar</button></a>
-        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">Eliminar</button>
+        <button type="button" class="btn btn-secondary btn-sm " data-toggle="modal" data-target="#modal1">Eliminar</button>
 
       </form>
       
       </td>
 
     </tr>
+    
  
     
     @endforeach

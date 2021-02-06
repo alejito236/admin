@@ -116,7 +116,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type=submit class="btn btn-primary">Aceptar</button>
-                                                        <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                                                        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -127,7 +127,7 @@
                                     </body>
                                     <div class="" style="margin-top:20px">
                                         <button type="button" class="btn btn-primary btn-sm " data-toggle="modal" data-target="#modal1">Enviar</button>
-                                        <button type="reset" class="btn btn-danger btn-sm ">Cancelar</button>
+                                        <button type="reset" class="btn btn-secondary btn-sm ">Cancelar</button>
 
 
                                     </div>

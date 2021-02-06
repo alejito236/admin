@@ -80,7 +80,7 @@ Genial! {{ $flash  }}
        </div>
        <div class= "modal-footer">
        <button type="submit" class="btn btn-primary">Aceptar</button>
-       <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+       <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
        </div>
       </div>
     </div>
@@ -92,7 +92,7 @@ Genial! {{ $flash  }}
 @can('administrador')
                         <a href="{{route('novedades.edit',$novedad->id)}}">
                         <div class="float-right">
-                        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">
+                        <button type="button" class="btn btn-secondary btn-sm " data-toggle="modal" data-target="#modal1">
                             Eliminar 
                         </button>
                         <button type="button"

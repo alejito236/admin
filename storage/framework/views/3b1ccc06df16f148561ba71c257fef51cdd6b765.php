@@ -15,7 +15,7 @@
         <?php if($flash = Session::get('exito') ): ?>
  
  <div class="alert alert-success alert-dismissible fade show" role="alert">
-<strong>Genial!</strong> <?php echo e($flash); ?>
+Genial! <?php echo e($flash); ?>
 
 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
 <span aria-hidden="true">&times;</span>
@@ -60,7 +60,7 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body" style="color:black">
-                    <h1 class="card-title" style="color: #002537;"><strong><?php echo e($novedad->cuerpo_novedad); ?></strong></h1>
+                    <h2 class="card-title" style="color: #002537;"><?php echo e($novedad->cuerpo_novedad); ?></h2>
                     <p class="card-text"><?php echo e($novedad->tipo_novedad); ?></p>
                     <p class="card-text"><?php echo e($novedad->fecha_novedad); ?></p>
 
@@ -81,7 +81,7 @@
        </div>
        <div class= "modal-footer">
        <button type="submit" class="btn btn-primary">Aceptar</button>
-       <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+       <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
        </div>
       </div>
     </div>
@@ -93,7 +93,7 @@
 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('administrador')): ?>
                         <a href="<?php echo e(route('novedades.edit',$novedad->id)); ?>">
                         <div class="float-right">
-                        <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#modal1">
+                        <button type="button" class="btn btn-secondary btn-sm " data-toggle="modal" data-target="#modal1">
                             Eliminar 
                         </button>
                         <button type="button"
@@ -129,5 +129,6 @@
 </div>
 </div>
 <?php $__env->stopSection(); ?>
+
 
 <?php echo $__env->make('layouts.demo', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\admin\resources\views/novedades/index.blade.php ENDPATH**/ ?>

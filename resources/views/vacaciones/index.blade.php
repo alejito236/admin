@@ -84,7 +84,7 @@
        </div>
        <div class= "modal-footer">
        <button type="submit" class="btn btn-primary">Aceptar</button>
-       <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+       <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
        </div>
       </div>
     </div>
@@ -94,7 +94,7 @@
        
 </body>
 
-        <a href="{{route('vacaciones.show',$vaca->id)}}" target="_blank"><button type="button" class="btn btn-secondary btn-sm "  >Ver</button></a>
+        <a href="{{route('vacaciones.show',$vaca->id)}}" target="_blank"><button type="button" class="btn btn-info btn-sm "  >Ver</button></a>
  
         <a href="{{route('vacaciones.edit',$vaca->id)}}"><button type="button" class="btn btn-primary btn-sm " >Actualizar</button></a>
  

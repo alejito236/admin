@@ -97,7 +97,7 @@
                         <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('administrador')): ?>
                         <a href="<?php echo e(route('capacitaciones.edit',$capacitacion->id)); ?>">
                             <div class="float-right">
-                                <button type="button" class="btn btn-danger btn-sm " data-toggle="modal"
+                                <button type="button" class="btn btn-secondary btn-sm " data-toggle="modal"
                                     data-target="#modal1">
                                     Eliminar
                                 </button>

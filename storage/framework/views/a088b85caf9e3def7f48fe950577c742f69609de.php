@@ -144,7 +144,6 @@ body {
 /*--------------------sidebar-brand----------------------*/
 
 .sidebar-wrapper .sidebar-brand {
-  background: #4caad4;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -159,12 +158,6 @@ body {
 .sidebar-wrapper .sidebar-brand #close-sidebar {
   cursor: pointer;
   font-size: 20px;
-}
-i{
-  color: #ffffff;
-}
-i:hover{
-  color: #b26523;
 }
 /*--------------------sidebar-header----------------------*/
 
@@ -418,7 +411,7 @@ i:hover{
 /*-----------------------------chiller-theme-------------------------------------------------*/
 /*Color importante*/
 .chiller-theme .sidebar-wrapper {
-    background: #fefefe;
+    background: #4caad4;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-header,
@@ -440,7 +433,7 @@ i:hover{
 .chiller-theme .sidebar-wrapper .sidebar-brand>a,
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a,
 .chiller-theme .sidebar-footer>a {
-    color: #000000;
+    color: #ffffff;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a,
@@ -463,7 +456,7 @@ i:hover{
 .chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
 .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus+span,
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
-    color: #ffffff;
+    color: #b58258;
     text-shadow:0px 0px 10px rgba(22, 199, 255, 0.5);
 }
 
@@ -471,7 +464,7 @@ i:hover{
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div,
 .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
 .chiller-theme .sidebar-wrapper .sidebar-search .input-group-text {
-    background: #4caad4;
+    background: #009cc4;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu .header-menu span {
@@ -638,19 +631,12 @@ i:hover{
               </ul>
             </div>
           </li>
-          <li class="sidebar-dropdown">
-            <a href="#">
+          <li class="sidebar-">
+            <a href="<?php echo e(route('pqrs.index')); ?>">
               <i class="fa fa-bullhorn"></i>
-              <span>Buzón de sugerencias</span>
+              <span>PQRS</span>
             </a>
-            <div class="sidebar-submenu">
-              <ul>
-                <li>
-                  <a href="<?php echo e(route('pqrs.index')); ?>">PQRS</a>
-                </li>
-
-              </ul>
-            </div>
+           
           </li>
           
         </ul>
@@ -665,6 +651,7 @@ i:hover{
   <a id="show-sidebar" class="btn btn-sm btn-dark show-sidebar" href="#">
     <i class="fas fa-bars"></i>
   </a>
+ 
   
   <a href="#"><img src="http://admin.test/dist/images/logo montichelo.png" alt="AdminLTE Logo" class="brand-image " style="height: 40px;"></a>
 <div class="boton_salir">
@@ -675,21 +662,10 @@ i:hover{
                                     style="display: none;">
                                     <?php echo csrf_field(); ?>
                                 </form>
-<i class="fa fa-power-off salir" style="margin-left:15px"></i>
+ <i class="fa fa-power-off salir" style="margin-left:15px"></i>
 </a>
 </div>
-<div class="dropdown show">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    imgen
-  
-  </a>
 
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
 <script>
     const $drowdownArrow = document.querySelector('.fa-angle-down');
 const $checkbox = document.getElementById('openDropdown');
