@@ -24,7 +24,7 @@ Genial! {{ $flash  }}
 <div >
 
 @endif
-        <h1>Novedades<a href="novedades/create"><br>
+        <h1 style=" text-align:center" >Novedades<a href="novedades/create"><br>
         @can('administrador')
         <button type="button" class="btn btn-success btn-sm btn-info  " >Agregar
                     novedad</button>

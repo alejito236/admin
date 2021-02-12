@@ -26,7 +26,7 @@
 
         <?php endif; ?>
 
-        <h1>Capacitaciones<a href="capacitaciones/create"><br>
+        <h1 style=" text-align:center" >Capacitaciones<a href="capacitaciones/create"><br>
                 <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('administrador')): ?>
                 <button type="button" class="btn btn-success btn-sm btn-info ">Agregar capacitación
                 </button>

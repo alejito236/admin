@@ -28,21 +28,34 @@
    
         
    
-        <h1>lista de usuarios<a href="usuarios/create"><br><button type="button" class="btn btn-info btn-success btn-sm ">Agregar
+        <h1 style=" text-align:center" >lista de usuarios<a href="usuarios/create" " ><br><button type="button" class="btn btn-info btn-success btn-sm" style=>Agregar
                     Usuario</button> </a></h1>
 
 
     </div>
-
-   
-     
-    
+ 
+    <table class="table table-borderless"   >
 
   
 
-<table class="table" style="color:black">
-  <thead>
-    <tr>
+
+
+
+  <thead class="table-info" >
+  <style type="text/css">
+
+table, th, td {
+  border:1px solid black;
+  border-collapse:collapse; 
+ 
+}
+
+th, td {
+  padding:15px;
+
+}
+</style>
+    <tr >
       <th scope="col">ID</th>
       <th scope="col">NOMBRE</th>
       <th scope="col">Email</th> 
@@ -59,6 +72,11 @@
       <td><?php echo e($user->name); ?></td>
       <td><?php echo e($user->email); ?></td>
       <td>
+
+  
+
+
+      
       
       <form action="<?php echo e(route('usuarios.destroy',$user->id)); ?>" method=POST>
         <?php echo csrf_field(); ?>

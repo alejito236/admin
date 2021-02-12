@@ -25,7 +25,7 @@
 
         @endif
 
-        <h1>Capacitaciones<a href="capacitaciones/create"><br>
+        <h1 style=" text-align:center" >Capacitaciones<a href="capacitaciones/create"><br>
                 @can('administrador')
                 <button type="button" class="btn btn-success btn-sm btn-info ">Agregar capacitación
                 </button>

@@ -25,7 +25,7 @@ Genial! <?php echo e($flash); ?>
 <div >
 
 <?php endif; ?>
-        <h1>Novedades<a href="novedades/create"><br>
+        <h1 style=" text-align:center" >Novedades<a href="novedades/create"><br>
         <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('administrador')): ?>
         <button type="button" class="btn btn-success btn-sm btn-info  " >Agregar
                     novedad</button>

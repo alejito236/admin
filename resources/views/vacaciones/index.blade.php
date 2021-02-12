@@ -27,7 +27,7 @@
    
         
    
-        <h1>Solicitudes de Vacaciones<a href="vacaciones/create"><br><button type="button" class="btn btn-info btn-success btn-sm "> Agenda tus vacaciones
+        <h1 style=" text-align:center" >Solicitudes de Vacaciones<a href="vacaciones/create"  ><br><button type="button" class="btn btn-info btn-success btn-sm "> Agenda tus vacaciones
                     </button> </a></h1>
 
 
@@ -35,11 +35,30 @@
 
    
      
-    <div class="contai">
+  
   
 
-<table class="table" style="color:black" >
-  <thead>
+    <table class="table table-borderless"   >
+
+  
+
+
+
+
+<thead class="table-info" >
+<style type="text/css">
+
+table, th, td {
+border:1px solid black;
+border-collapse:collapse; 
+
+}
+
+th, td {
+padding:15px;
+
+}
+</style>
     <tr>
       <th  scope="col">Nombre</th>
       <th  scope="col">Apellido</th>
