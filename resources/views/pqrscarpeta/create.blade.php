@@ -9,14 +9,14 @@
     </button>
 </div>
 @endif
-<div class="col-md-10 ml-auto mr-auto">
+<div class="col-md-30 ml-auto mr-auto">
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
             <!-- SELECT2 EXAMPLE -->
             <div class="card card-default">
-                <div class="card-header">
-                    <h3 class="card-title" style=" text-align:center" >PQRS</h3>
+                <div class="card-header" style="background-color:#73b6c6">
+                    <h3 class="card-title" style="text-align:center; color:white" >PQRS</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body" style="background-color:white;">
@@ -28,25 +28,25 @@
                                     @csrf
                                     <div class="row align-items-start">
                                         <div class="form-group">
-                                            <label for="cuerpo_pqrs">Nombres</label>
+                                            <label for="cuerpo_pqrs">Nombres:</label>
                                             <input type="text" class="form-control" name="cuerpo_pqrs" placeholder="Escribe tus nombres" required>
                                         </div>
                                         <div class="col-md-3 offset-md-1" >
                                             <div class="form-group">
-                                                <label for="apellido_pqrs">Apellidos</label>
+                                                <label for="apellido_pqrs">Apellidos:</label>
                                                 <input type="text" class="form-control" name="apellido_pqrs" placeholder="Escribe tus apellidos" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3 offset-md-1">
                                             <div class="form-group">
-                                                <label for="email_pqrs">E-mail</label>
+                                                <label for="email_pqrs">E-mail:</label>
                                                 <input type="text" class="form-control" name="email_pqrs" placeholder="Correo" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row align-items-center">
                                         <div class="form-group">
-                                            <label for="tipoid_pqrs">Tipo de identificación</label>
+                                            <label for="tipoid_pqrs">Tipo de identificación:</label>
                                             <select input type="text" class="form-control" name="tipoid_pqrs" placeholder="Tipo de documento" required>
                                                 <option value="1">C.C</option>
                                                 <option value="2">Cedula de extranjeria</option>
@@ -56,13 +56,13 @@
                                         </div>
                                         <div class="col-md-3 offset-md-1" >
                                             <div class="form-group">
-                                                <label for="numeroid_pqrs">Numero de identificación</label>
+                                                <label for="numeroid_pqrs">Numero de identificación:</label>
                                                 <input type="text" class="form-control" name="numeroid_pqrs" placeholder="Numero de documento" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3 offset-md-1">
                                             <div class="form-group">
-                                                <label for="telefono_pqrs">Teléfono</label>
+                                                <label for="telefono_pqrs">Teléfono:</label>
                                                 <input type="text" class="form-control" name="telefono_pqrs" placeholder="Telefono" required>
                                             </div>
                                         </div>
@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="row align-items-start">
                                         <div class="form-group">
-                                            <label for="tiposolicitud_pqrs">Tipo de solicitud</label>
+                                            <label for="tiposolicitud_pqrs">Tipo de solicitud:</label>
                                             <select input type="text" class="form-control" name="tiposolicitud_pqrs" placeholder="Select" required>
                                             <option value="1">Petición</option>
                                                 <option value="2">Queja</option>
@@ -80,20 +80,20 @@
                                         </div>
                                         <div class="col-md-3 offset-md-1" >
                                             <div class="form-group">
-                                                <label for="solicitud_pqrs">Titulo de solicitud</label>
+                                                <label for="solicitud_pqrs">Titulo de solicitud:</label>
                                                 <input type="text" class="form-control" name="solicitud_pqrs" placeholder="Titulo de su pqrs" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3 offset-md-1">
                                             <div class="form-group">
-                                                <label for="fecha_pqrs">Fecha</label>
+                                                <label for="fecha_pqrs">Fecha:</label>
                                                 <input type="date" class="form-control" name="fecha_pqrs" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-11" >
                                         <div class="form-group">
-                                            <label for="contenido_pqrs">Contenido de solicitud</label>
+                                            <label for="contenido_pqrs">Contenido de solicitud:</label>
 
                                             <textarea class="form-control form-control-sm mb-3" rows="10" cols="30" name="contenido_pqrs" placeholder="Describa su problema" required></textarea>
 
