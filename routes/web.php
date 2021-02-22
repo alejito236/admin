@@ -5,50 +5,50 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::resource('/usuarios', 'UserController');
+Route::resource('/usuarios', 'UserController')->middleware('auth');
 
 route::get('/usuario/listarPdf', 'UserController@listarPdf')->name('nombres_pdf');
 
-Route::resource('/mision', 'misionController');
+Route::resource('/mision', 'misionController')->middleware('auth');
 
-Route::resource('/politica', 'politica');
+Route::resource('/politica', 'politica')->middleware('auth');
 
-Route::resource('/valores', 'valores');
+Route::resource('/valores', 'valores')->middleware('auth');
 
-Route::resource('/plan', 'plan');
+Route::resource('/plan', 'plan')->middleware('auth');
 
-Route::resource('/organigrama', 'organigrama');
+Route::resource('/organigrama', 'organigrama')->middleware('auth');
 
-Route::resource('/unidades', 'unidades');
+Route::resource('/unidades', 'unidades')->middleware('auth');
 
-Route::resource('/cumple', 'cumple');
+Route::resource('/cumple', 'cumple')->middleware('auth');
 
-Route::resource('/directorio', 'directorio');
+Route::resource('/directorio', 'directorio')->middleware('auth');
 
-Route::resource('/biografias', 'biografias');
+Route::resource('/biografias', 'biografias')->middleware('auth');
 
-Route::resource('/infografias', 'infografias');
+Route::resource('/infografias', 'infografias')->middleware('auth');
 
-Route::resource('/copasst', 'copasst');
+Route::resource('/copasst', 'copasst')->middleware('auth');
 
-Route::resource('/Manualesoriginal', 'Manuales');
+Route::resource('/Manualesoriginal', 'Manuales')->middleware('auth');
 
-Route::resource('/novedades', 'NovedadesController');
+Route::resource('/novedades', 'NovedadesController')->middleware('auth');
 
-Route::resource('/capacitaciones', 'CapacitacionesController');
+Route::resource('/capacitaciones', 'CapacitacionesController')->middleware('auth');
 
-Route::resource('/pqrs', 'PqrsController');
+Route::resource('/pqrs', 'PqrsController')->middleware('auth');
 
 
-Route::resource('/procedimientos', 'procedimientos');
+Route::resource('/procedimientos', 'procedimientos')->middleware('auth');
 
-Route::resource('/formatos', 'formatos');
+Route::resource('/formatos', 'formatos')->middleware('auth');
 
-Route::resource('/registros', 'registros');
+Route::resource('/registros', 'registros')->middleware('auth');
 
-Route::resource('/inicio', 'inicioController');
+Route::resource('/inicio', 'inicioController')->middleware('auth');
 
-Route::resource('/vacaciones', 'VacacionesController');
+Route::resource('/vacaciones', 'VacacionesController')->middleware('auth');
 
 
 route::name('imprimir')->get('\imprimir-pdf', 'PDFController@imprimir');
@@ -56,8 +56,8 @@ route::name('imprimir')->get('\imprimir-pdf', 'PDFController@imprimir');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
