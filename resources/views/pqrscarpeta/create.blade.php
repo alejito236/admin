@@ -90,9 +90,11 @@
                                                 <input type="date" class="form-control" name="fecha_pqrs" required>
                                             </div>
                                         </div>
-                                    </div>
+                                  
+                                  </div>
+                             <center>
                                     <div class="col-md-11" >
-                                        <div class="form-group"  >
+                                        <div class="form-group"   style="width:75%">
                                             <label for="contenido_pqrs">Contenido de solicitud:</label>
 
                                             <textarea class="form-control form-control-sm mb-3" rows="10" cols="30" name="contenido_pqrs" placeholder="Describa su problema" required></textarea>
@@ -100,7 +102,7 @@
                                         </div>
 
                                     </div>
-
+                              </center>
                                     </body>
                                     <div class="container">
                                         <div class="modal fade" tabindex="-1" id="modal1">
