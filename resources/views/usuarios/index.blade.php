@@ -33,13 +33,12 @@
 
     </div>
  
-    <table class="table table-borderless"   >
-
-  
-
-
-
-
+   
+   
+   
+   
+   
+    <table class="table table-striped"   >
   <thead class="table-info" >
   <style type="text/css">
 
@@ -55,15 +54,16 @@ th, td {
 }
 </style>
     <tr >
-      <th scope="col">ID</th>
-      <th scope="col">NOMBRE</th>
-      <th scope="col">Email</th> 
-      <th scope="col">OPCIONES</th>
+      <th style='border:1px solid #000' scope="col">ID</th>
+      <th  style='border:1px solid #000' scope="col">NOMBRE</th>
+      <th  style='border:1px solid #000' scope="col">Email</th> 
+      <th   style='border:1px solid #000'scope="col">OPCIONES</th>
     
 
      
     </tr>
   </thead>
+ 
   <tbody>
     <tr>
     @foreach($users as $user)

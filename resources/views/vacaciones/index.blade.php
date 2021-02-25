@@ -38,7 +38,7 @@
   
   
 
-    <table class="table table-borderless"   >
+    <table class="table table-striped"   >
 
   
 
@@ -60,13 +60,13 @@ padding:15px;
 }
 </style>
     <tr>
-      <th  scope="col">Nombre</th>
-      <th  scope="col">Apellido</th>
-      <th  scope="col">Tipo Solicitud</th>
-      <th  scope="col">Telefono</th>
-      <th  scope="col">Área de Trabajo</th>
-      <th  scope="col">Fecha</th>
-      <th scope="col">OPCIONES</th>
+      <th style='border:1px solid #000'  scope="col">Nombre</th>
+      <th  style='border:1px solid #000' scope="col">Apellido</th>
+      <th style='border:1px solid #000' scope="col">Tipo Solicitud</th>
+      <th style='border:1px solid #000' scope="col">Telefono</th>
+      <th style='border:1px solid #000'  scope="col">Área de Trabajo</th>
+      <th style='border:1px solid #000'  scope="col">Fecha</th>
+      <th style='border:1px solid #000' scope="col">OPCIONES</th>
 
      
     </tr>
